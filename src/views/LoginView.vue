@@ -75,7 +75,7 @@ import type {LoginForm} from "@/types";
 import {useRoute} from "vue-router";
 const route = useRoute();
 // const temp = route.query.redirect;
-let redirectPath = route.query.redirect
+let redirectPath = route.query.redirect?.toString() as string
 
 if (Array.isArray(redirectPath)) {
   redirectPath = redirectPath[0]
