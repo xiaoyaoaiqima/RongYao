@@ -52,5 +52,6 @@ const handleSelect = (key: string, keyPath: string[]) => {
 .search_bar {
     margin-left: 300px;
     width: 300px;
+  margin-top: 10px;
 }
 </style>

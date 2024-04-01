@@ -40,7 +40,7 @@ const handleSelect = (key: string, keyPath: string[]) => {
 }
 </script>
 
-<style>
+<style scoped>
 #globalHeader {
     min-width: 1200px;
     height: 36px;

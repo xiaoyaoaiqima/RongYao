@@ -36,11 +36,12 @@
       <el-col :span="6" style="display: flex; flex-direction: column;">
         <div style="margin-bottom: 20px;margin-top: 20px">
           <div style="background-color:ghostwhite;align-items: center;justify-content: center;display: flex;flex-direction: column">
-            <el-button style="width: 200px;height: 40px;margin-top: 10px;background-color: black;border-radius: 15px">
-              <p style="color: #FFFFFF">
+            <FancyButton >
+              <p style="color: #FFFFFF;display: inline-block">
                 签到领积分
               </p>
-         </el-button>
+              <AwesomeIcon/>
+            </FancyButton>
             <p>今日领取人数 6972</p>
           </div>
         </div>
@@ -89,6 +90,8 @@ import list_card from './list_card.vue';
 import {onMounted, ref} from 'vue';
 import {cards, datas_club_c2_1} from "@/static";
 import axios from "axios";
+import FancyButton from "@/components/FancyButton.vue";
+import AwesomeIcon from "@/Icon/AwesomeIcon.vue";
 
 const datas_axios = ref([]);
 

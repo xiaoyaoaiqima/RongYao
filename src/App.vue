@@ -7,26 +7,6 @@ import {onMounted} from "vue";
 
 const route = useRoute()
 const userStore = UserStore();
-
-// 路由守卫
-// 如果在主页 不需要重定向，如果去其他地方 跳转到login
-const ifLogin = Boolean(sessionStorage.getItem('ifLogin'));
-router.beforeEach((to, from, next) => {
-  console.log("目前登录状态" + ifLogin + "去往方向" + to.path);
-  if (to.path === '/'){
-    console.log("首页无需登录")
-    return next();
-  }
-  if (!ifLogin && to.path !== '/login') {
-    return next('/login');
-  }
-  else {
-    console.log(to.path)
-    return next();
-  }
-});
-
-
 const doInit = () => {
   console.log(
       "  _________                .____    .__        \n" +

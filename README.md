@@ -11,6 +11,7 @@ Vue指令用了 v-if，v-for，v-model，v-input 加起来很多个了
 ### Vue组件
 - 组件数量: component文件夹下，View文件夹下，文件名字不带View的就是组件
 - 组件质量 : Carousel.vue复用了很多次，BasicLayout.vue复用很多次
+- BasicLayout.vue在app.vue里面使用，相当于后面的每一个路由，都使用了这个文件
 - 组件特性 : props传参用了  ，Carousel.vue里面，listCard.vue里面
 ### 路由设计
 有404页面（ErrorView.vue) ，在访问会员页面的时候跳转，
@@ -36,12 +37,12 @@ el-button, el-menu, el-form,el-col, el-row,el-carousel
 
 ### Typescript
 使用ts的类型接口，检查 用户登录接口
+所有后缀名用.ts的文件
 在LoginView.vue
 
 ### 路由守卫
 判断，如果没有登录，需要跳转到login
 如果在首页，不需要登录
-
 
 ## 全局组件
 稍微改一下布局， 弄几个全局的组件，你们评分要求需要复用组件

@@ -1,3 +1,30 @@
+<style scoped>
+#login {
+  padding: 150px;
+  text-align: center;
+}
+
+#login_body {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+#login_pic {
+  width: 50%;
+  border-right: 1px dashed #000;
+  border-left: 1px dashed #000;
+  padding: 0 200px;
+}
+
+#login_form {
+  width: 50%;
+  border-right: 1px dashed #000;
+  border-left: 1px dashed #000;
+  padding: 0 200px;
+}
+
+</style>
 <template>
     <div id="login">
         <div>
@@ -8,6 +35,7 @@
                 <img src="../assets/二维码.png" alt="">
             </div>
             <div id="login_form">
+<!--              表单在这里 el-form-->
                 <el-form label-width="auto" :model="form" style="max-width: 600px">
                     <el-form-item label="地区">
 <!--                      这里使用了v-model 双向绑定-->
@@ -22,7 +50,12 @@
                     <el-form-item label="密码">
                         <el-input v-model="form.userPassword" />
                     </el-form-item>
-                    <el-button type="primary" size="large" style="width: 150px;" @click="login">登录</el-button>
+                  <el-button type="primary" size="large" @click="login">登录</el-button>
+<!--                  <FancyButton>-->
+<!--                    <el-button type="primary" size="large" @click="login">登录</el-button>-->
+<!--                    <AwesomeIcon/>-->
+<!--                  </FancyButton>-->
+
                 </el-form>
             </div>
         </div>
@@ -39,6 +72,8 @@ import axios from 'axios'
 import router from "@/router";
 import {UserStore} from "@/stores/user";
 import type {LoginForm} from "@/types";
+import FancyButton from "@/components/FancyButton.vue";
+import AwesomeIcon from "@/Icon/AwesomeIcon.vue";
 
 const form: LoginForm = reactive({
     region: '',
@@ -54,12 +89,12 @@ const login = () => {
               // 将用户登录时候的表单输入userAccount
               // mock模拟的数据存入pinia
               // 使用pinia的action
-                userStore.getUser(form.userAccount,response.data.avatarUrl,form.region)
-                sessionStorage.setItem('ifLogin', String(true));
-              // alert('200: ' + response.data.message + '\n用户头像为'+response.data.avatarUrl)
+              sessionStorage.setItem('ifLogin', String(true));
+              // console.log("Login: "+sessionStorage.getItem('ifLogin'));
+              userStore.getUser(form.userAccount,response.data.avatarUrl,form.region)
+              alert('200: ' + response.data.message + '\n用户头像为'+response.data.avatarUrl)
                 // 跳转到首页
-                router.push('/')
-      ;
+                router.push('/');
             } else {
                 // 登录失败，处理错误信息
                 console.error(response.data.message)
@@ -72,33 +107,4 @@ const login = () => {
 }
 </script>
 
-<style scoped>
-#login {
-    padding: 150px;
-    text-align: center;
-}
 
-#login_body {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
-
-#login_pic {
-    width: 50%;
-    border-right: 1px dashed #000;
-    border-left: 1px dashed #000;
-    padding: 0 200px;
-}
-
-#login_form {
-    width: 50%;
-    border-right: 1px dashed #000;
-    border-left: 1px dashed #000;
-    padding: 0 200px;
-}
-
-#login_form .el-form-item {
-    margin-bottom: 20px;
-}
-</style>

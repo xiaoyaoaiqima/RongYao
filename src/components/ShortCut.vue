@@ -22,12 +22,14 @@
 
             </el-menu-item>
             <el-menu-item index="8" class="menu-item" style="color: aliceblue;">
-                <router-link to="/" class="link">注册 | </router-link>
-                <router-link to="/login" class="link"> 登录</router-link>
+<!--                <router-link to="/" class="link">注册 | </router-link>-->
+                <router-link to="/login" class="link">注册 | 登录</router-link>
             </el-menu-item>
-            <el-menu-item index="6" class="menu-item" style="color: aliceblue;"> 我的订单</el-menu-item>
-            <el-menu-item index="4" class="menu-item" style="color: aliceblue;">购物车（0）</el-menu-item>
-            <el-menu-item index="4" class="menu-item" style="color: aliceblue; margin-right: 400px">手机端</el-menu-item>
+            <el-menu-item index="9" class="menu-item" style="color: aliceblue;"> 我的订单</el-menu-item>
+            <el-menu-item index="10" class="menu-item" style="color: aliceblue;">
+              <router-link to="/shopCar" class="link">购物车</router-link>
+            </el-menu-item>
+            <el-menu-item index="11" class="menu-item" style="color: aliceblue; margin-right: 400px">手机端</el-menu-item>
 
         </el-menu>
     </div>

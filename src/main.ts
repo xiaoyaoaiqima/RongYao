@@ -17,12 +17,11 @@ app.use(router)
 app.use(ElementPlus)
 app.mount('#app')
 sessionStorage.setItem('ifLogin', String(false));
-// axios.interceptors.response.use((response) => {
-//     if (response.config.url === '/api/datas_club_c2_1') {
-//         response.data = data.datas_club_c2_1
-//     }
-//     return response;
-// });
+
+// 在应用关闭时将sessionStorage中的值置为false
+app.config.globalProperties.$beforeUnmount = () => {
+    sessionStorage.setItem('ifLogin', String(false));
+}
 
 app.config.globalProperties.$axios=axios;  //配置axios的全局引用
 

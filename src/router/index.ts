@@ -11,9 +11,9 @@ const router = createRouter({
     },
     {
       // 测试页面
-      path: '/test',
-      name: 'test',
-      component: () => import('../views/Club/ClubLayout.vue')
+      path: '/shopCar',
+      name: 'shopCar',
+      component: () => import('../views/Shop/ShopCar.vue')
     },
     {
       // 错误 404
@@ -65,6 +65,13 @@ const router = createRouter({
     }
   ]
 })
+const ifLogin = Boolean(sessionStorage.getItem('ifLogin'));
 
+router.beforeEach((to, from, next) => {
+  if(!ifLogin && to.name !=='login'){
+    return  next('/login')
+  }
+  else next()
+})
 
 export default router
