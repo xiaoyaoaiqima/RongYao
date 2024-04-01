@@ -9,16 +9,6 @@
 
 </template>
 
-<style scoped>
-.carousel{
-  margin-right: 300px;
-  }
-.header
-{
-
-}
-</style>
-
 <script setup>
 import GlobalHeader_club from "@/components/GlobalHeader_club.vue";
 import Carousel from '../../components/Carousel.vue';

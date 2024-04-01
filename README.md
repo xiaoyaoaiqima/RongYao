@@ -49,8 +49,6 @@ el-button, el-menu, el-form,el-col, el-row,el-carousel
 GlobalHeader，GlobalFooter
 
 
-
-
 ## 总体结构
 ### 顶部栏 
 

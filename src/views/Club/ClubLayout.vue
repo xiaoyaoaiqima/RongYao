@@ -86,16 +86,30 @@
 </template>
 
 <script setup lang="ts">
-import list_card from './list_card.vue';
+import list_card from '@/views/Club/list_card.vue';
 import {onMounted, ref} from 'vue';
 import {cards, datas_club_c2_1} from "@/static";
 import axios from "axios";
 import FancyButton from "@/components/FancyButton.vue";
 import AwesomeIcon from "@/Icon/AwesomeIcon.vue";
 
-const datas_axios = ref([]);
+const datas_axios = ref([
+  {
+    id: 1,
+    imageUrl: 'https://res1-cn.c.hihonor.com/data/attachment/common/5b/common_3965_icon.png?1707288749',
+    title: '荣耀Magi',
+    description: '昨日总发帖: 6855'
+  },
+]);
 
-const datas_axios1 = ref([]);
+const datas_axios1 = ref([
+  {
+    id: 1,
+    imageUrl: 'https://res1-cn.c.hihonor.com/data/attachment/common/5b/common_3965_icon.png?1707288749',
+    title: '荣耀Magi',
+    description: '昨日总发帖: 6855'
+  },
+]);
 
 const fetchData1 = async () => {
   try {

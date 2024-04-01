@@ -5,10 +5,8 @@
       <div class="text-content" style="width: 50%">
         <h3>{{ title }}</h3>
         <p>{{ description }}</p>
-
       </div>
     </div>
-
   </el-card>
 </template>
 
