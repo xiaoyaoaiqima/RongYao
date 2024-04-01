@@ -1,0 +1,2408 @@
+
+<!doctype html>
+<html lang="zh" >
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta http-equiv="Content-Language" content="zh-cn"/>
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests"/>
+    <meta name="viewport" content="width=device-width, initial-scale=0.5">
+    
+    <script>
+        domainYY = 'https://yy-cn.c.hihonor.com';
+        domainRush = 'https://buy.hihonor.com/cn';
+        domainMain = 'https://www.hihonor.com/cn/shop';
+        domainWap = 'https://www.hihonor.com/cn/m';
+        imagePath = 'https://hshop.honorfile.com/2024022214/images';
+        domainAccount = 'https://www.hihonor.com/cn/shop';
+        isUseAccount = 'false';
+        upBindPhoneAddr = 'https://hnid-drcn.cloud.hihonor.com/AMW/portal/bindPhoneAccount.html?lang=zh-cn&themeName=cloudTheme&reqClientType=25';
+        dominWapRecycle = '';
+        scriptPath = 'https://hshop.honorfile.com/2024022214/js';
+        openApiDomain = 'https://openapi-cn.c.hihonor.com';
+        timeOutInfo = '服务器开小差了，请稍后再试！';
+        addressFrontRegex = '';
+        easeBuyDomain = 'https://www.hihonor.com/cn/easy';
+        scriptPaths = 'https://hshop.honorfile.com/2024022214/js';
+        dapDomain = 'https://dap-cn.c.hihonor.com';
+        riskTimeOut = '200';
+        orderPayLimitNum = '6';
+        loginWindowType = '';
+        loginWindowSupportedBrowsers = 'Chrome|Safari';
+        lastBroswedCount = '10';
+
+        //加载系统配置表中商城公共配置项
+        mallCompany = '荣耀';
+        mallName = '荣耀商城';
+        mallBriefSubCompany = '荣耀终端';
+        mallSubCompany = '荣耀终端有限公司';
+        mallPrdEntity = 'VMALL-HUAWEIDEVICE';
+        mallCountry = 'CN';
+        //商品开售提醒页面 mall和honor的logo
+        mallSaleReminLogo = 'https://file07.c.hihonor.com/pimages//common/images/71596708931610769517.png';
+        honorSaleRemindLogo = 'https://file05.c.hihonor.com/images/echannel/honor/logo_honor.png';
+        mallSpecialareLogo = 'https://file05.c.hihonor.com/pimages/sale/2020-12/20201223-135321.png';
+        webDownloadAppImg = 'https://file05.c.hihonor.com/pimages/pages/cdnImages/47095277880617259074.jpg';
+        mallWechatSearchImg = 'https://file07.c.hihonor.com/pimages//common/images/71596708931610769517.png';
+        // 第三方域名
+        salevmall = 'https://www.hihonor.com/cn/sale';
+        //商城域名
+        mallDomain = 'hihonor.com';
+        //荣耀商城隐私协议域名
+        honorPrivacyDomain = 'https://www.hihonor.com';
+        //荣耀域名后面的统一路径
+        bePath = '/cn/shop';
+        //荣耀--登出接口url
+        honorLogoutUrl = 'https://cuep-sg.hihonor.com/abroad/auth/logout';
+        // 数据迁移开关，0：关闭；1：开启
+        isMigrationSupport = '0';
+        //荣耀公司内购政策
+        purchasePoliceUrl = 'https://w3.hihonor.com/announce/#/detail?id=402980';
+        //webp开关
+        indexWebpEnable = 'false';
+        pdpWebpEnable = 'false';
+        //纪念日置灰
+        isGray = '';
+        isHomePage="true";
+
+        isUseUemProd = 'true';
+        uemAppId = '76befa025dcd343b9b6c479b35467b56';
+        uemConfig = '{"isProd":"1","appKey":"76befa025dcd343b9b6c479b35467b56"}';
+
+        try {
+            if (document.cookie.indexOf('redirectWap=1') < 0 && /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent)) {
+                var r = null;
+                if(isHomePage) location.href = domainWap
+                if (['/honor', '/notice'].indexOf(location.pathname) > -1) {
+                    location.href = domainWap + location.pathname.substr(bePath.length) + location.search;
+                } else if ([bePath, bePath + '/index.html'].indexOf(location.pathname) > -1) {
+                    location.href = domainWap + location.search;
+                } else if (bePath + '/recycle' === location.pathname) {
+                    location.href = dominWapRecycle;
+                } else if (r = (location.pathname.substr(bePath.length).match(/^\/(?:product|order\/easebuy)\/(\d+)\.html$/) || [])[1]) {
+                    location.href = domainWap + '/product/' + r + '.html' + location.search;
+                } else if (r = (location.pathname.substr(bePath.length).match(/^\/list\-(\d+)/) || [])[1]) {
+                    location.href = domainWap + "/category/detail" + '-' + r + '-' + r + location.search;
+                }else if((bePath + "/newpriority") === location.pathname){
+	                location.href = domainWap+location.pathname.substr(bePath.length)+location.search+location.hash;
+                }else if([bePath, bePath + '/member/order'].indexOf(location.pathname) > -1){
+                    location.href = domainWap+'/member/order';
+                }
+            }
+        } catch (err) {
+        
+        }
+    </script>
+    <script src="https://hshop.honorfile.com/2024022214/js/??/common/uem-utils.js" namespace="ec"></script>
+<title>&#x3010;&#x8363;&#x8000;&#x5546;&#x57ce;&#x9996;&#x9875;&#x3011;&#x8363;&#x8000;&#x624b;&#x673a;-&#x8363;&#x8000;Magic5&#x2f;MagicVs&#x2f;90&#x7cfb;&#x5217;-HONOR&#x624b;&#x673a;</title>
+<meta name="description" content="&#x8363;&#x8000;&#x5546;&#x57ce;&#x662f;&#x8363;&#x8000;&#x516c;&#x53f8;&#x81ea;&#x8425;&#x5b98;&#x65b9;&#x5546;&#x57ce;&#xff0c;&#x63d0;&#x4f9b;HONOR&#x8363;&#x8000;&#x624b;&#x673a;&#x28;&#x20;&#x8363;&#x8000;Magic5,&#x8363;&#x8000;MagicVs,&#x8363;&#x8000;90,&#x8363;&#x8000;80,&#x8363;&#x8000;80&#x20;GT,&#x8363;&#x8000;X50i,&#x8363;&#x8000;Play7T&#x20;&#x7b49;&#x29;,&#x8363;&#x8000;&#x7b14;&#x8bb0;&#x672c;,&#x8363;&#x8000;&#x5e73;&#x677f;,&#x8363;&#x8000;&#x7a7f;&#x6234;,&#x8363;&#x8000;&#x914d;&#x4ef6;&#x548c;&#x8363;&#x8000;&#x667a;&#x80fd;&#x5bb6;&#x5c45;&#x7b49;&#x5168;&#x573a;&#x666f;&#x667a;&#x6167;&#x751f;&#x6d3b;&#x4ea7;&#x54c1;&#x548c;&#x670d;&#x52a1;&#x3002;" />  
+<meta name="keywords" content="&#x8363;&#x8000;,&#x8363;&#x8000;&#x5546;&#x57ce;,&#x8363;&#x8000;&#x624b;&#x673a;,&#x8363;&#x8000;&#x667a;&#x80fd;&#x624b;&#x673a;,&#x8363;&#x8000;Magic5,&#x8363;&#x8000;MagicVs,&#x8363;&#x8000;90,&#x8363;&#x8000;80,&#x8363;&#x8000;80&#x20;GT,&#x8363;&#x8000;X50i,&#x8363;&#x8000;X40,&#x8363;&#x8000;Play7T,&#x8363;&#x8000;&#x7b14;&#x8bb0;&#x672c;,&#x8363;&#x8000;&#x5e73;&#x677f;,&#x20;&#x8363;&#x8000;&#x624b;&#x8868;,&#x20;&#x8363;&#x8000;&#x667a;&#x6167;&#x5c4f;" />
+<meta name="mobile-agent" content="format=xhtml;url=https://www.hihonor.com/cn/m/">
+<meta property="wb:webmaster" content="f62bd8cc2f7d9778" /><link rel="shortcut icon" href="https://www.hihonor.com/cn/shop/favicon.ico" />
+<link href="https://hshop.honorfile.com/2024022214/css/echannel/ec.core.base.min.css?20170722" rel="stylesheet" type="text/css">
+<link href="https://hshop.honorfile.com/2024022214/css/echannel/index.min.css?20170320" rel="stylesheet" type="text/css">
+<link rel="canonical" href="https://www.hihonor.com/cn/shop/">
+<link rel="alternate" media="only screen and (max-width: 640px)" href="https://www.hihonor.com/cn/m/">
+<link rel="preconnect" href="https://openapi-cn.c.hihonor.com"><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "Organization",
+        "name": "荣耀商城",
+        "description": "&#x8363;&#x8000;&#x5546;&#x57ce;&#x662f;&#x8363;&#x8000;&#x516c;&#x53f8;&#x81ea;&#x8425;&#x5b98;&#x65b9;&#x5546;&#x57ce;&#xff0c;&#x63d0;&#x4f9b;HONOR&#x8363;&#x8000;&#x624b;&#x673a;&#x28;&#x20;&#x8363;&#x8000;Magic5,&#x8363;&#x8000;MagicVs,&#x8363;&#x8000;90,&#x8363;&#x8000;80,&#x8363;&#x8000;80&#x20;GT,&#x8363;&#x8000;X50i,&#x8363;&#x8000;Play7T&#x20;&#x7b49;&#x29;,&#x8363;&#x8000;&#x7b14;&#x8bb0;&#x672c;,&#x8363;&#x8000;&#x5e73;&#x677f;,&#x8363;&#x8000;&#x7a7f;&#x6234;,&#x8363;&#x8000;&#x914d;&#x4ef6;&#x548c;&#x8363;&#x8000;&#x667a;&#x80fd;&#x5bb6;&#x5c45;&#x7b49;&#x5168;&#x573a;&#x666f;&#x667a;&#x6167;&#x751f;&#x6d3b;&#x4ea7;&#x54c1;&#x548c;&#x670d;&#x52a1;&#x3002;",
+        "logo": "https&#x3a;&#x2f;&#x2f;file07.c.hihonor.com&#x2f;pimages&#x2f;&#x2f;common&#x2f;images&#x2f;71596708931610769517.png",
+        "url": "https://www.hihonor.com/cn/shop/",
+        "sameAs": ["https://weibo.com/u/3206603957","https://www.toutiao.com/c/user/3716958291/#mid=3723879416"]
+    }
+</script><script src="https://hshop.honorfile.com/2024022214/js/??/common/jsapi.js,/common/base/jquery-3.5.0.js,/common/base/jquery-migrate-1.4.1.js,/common/base/jquery-migrate-3.1.0.js,/common/base/helper.js,/common/ec.core.js,/common/ec.box/box.js,/common/aes/XSSUtils.js,/common/aes/esapi.js,/common/aes/resources/Base.esapi.properties.js,/echannel/ec.business.js,/echannel/base.js,/echannel/slider.js,/echannel/swiper.min.js,/common/xss.js,/common/anonymity.js,/common/uem-utils.js" namespace="ec"></script>
+<!--[if lt IE 9]><script src="https://hshop.honorfile.com/2024022214/js/common/html5shiv.js"></script> <![endif]--></head>
+<body class="wide">
+<div class="top-banner" id="top-banner-block"></div>
+<div class="shortcut">
+    <div class="layout">
+        <div class="s-sub">
+			<ul>
+    <li>
+        <a href="https://www.hihonor.com/cn/brand/" target="_blank" _href="https://www.hihonor.com/cn/brand/" textvalue="关于荣耀">关于荣耀</a>
+    </li>
+    <li>
+        <a href="https://www.hihonor.com/cn/news/" target="_blank">新闻</a><br/>
+    </li>
+    <li>
+        <a href="https://www.hihonor.com/cn/" target="_blank">荣耀官网</a>
+    </li>
+    <li id="li-enterprise-preferential" class="hide">
+      <a target="_blank" href="https://www.hihonor.com/cn/shop/v/member/enterprise">优惠内购</a>
+    </li>
+    <li>
+        <a href="https://www.hihonor.com/cn/shop/privilege" target="_blank" _href="https://www.hihonor.com/cn/shop/privilege" textvalue="会员">会员</a>
+    </li>
+    <li>
+        <a href="https://company.hihonor.com/cn" target="_blank" _href="https://company.hihonor.com/cn">企业购</a>
+    </li>
+    <li>
+        <a href="https://club.hihonor.com/cn/rd.php?id=1315" target="_blank" _href="https://club.hihonor.com/cn/rd.php?id=1315">荣耀俱乐部</a><br/>
+    </li>
+</ul>
+<div>
+    <script type="text/javascript" src="https://dap-cn.c.hihonor.com/dap/trackSDK-EC.js"></script>
+</div><script>function getQueryStr(name) {
+    var result = window.location.search.match(new RegExp("[\?\&]" + name + "=([^\&]+)", "i"));
+    if (result == null || result.length < 1) {
+        return "";
+    }
+    if (result[1].indexOf("?")) {
+        result[1] = result[1].split("?")[0];
+    }
+    return result[1];
+}
+
+function  getCookie(f) {
+  var d = null;
+  if (document.cookie && document.cookie != "") {
+	  var a = document.cookie.split(";");
+	  for (var b = 0; b < a.length; b++) {
+		  var c = (a[b] || "").replace(/^(\s|\u00A0)+|(\s|\u00A0)+$/g, "");
+		  if (c.substring(0, f.length + 1) == f + "=") {
+			  var n = function (g) {
+				  g = g.replace(/\+/g, " ");
+				  var j = '()<>@,;:\\"/[]?={}';
+				  for (var h = 0; h < j.length; h++) {
+					  if (g.indexOf(j.charAt(h)) != -1) {
+						  if (g.startsWith('"')) {
+							  g = g.substring(1)
+						  }
+						  if (g.endsWith('"')) {
+							  g = g.substring(0, g.length - 1)
+						  }
+						  break
+					  }
+				  }
+				  return decodeURIComponent(g)
+			  };
+			  d = n(c.substring(f.length + 1));
+			  break
+		  }
+	  }
+  }
+  return d
+}
+
+function setCookie(r, h, g) {
+	g = g || {};
+	if (h === null) {
+	  h = "";
+	  g.expires = -1
+	}
+	var d = "";
+	if (g.expires && (typeof g.expires == "number" || g.expires.toUTCString)) {
+	  var f;
+	  if (typeof g.expires == "number") {
+		  f = new Date;
+		  f.setTime(f.getTime() + g.expires * 24 * 60 * 60 * 1e3)
+	  } else {
+		  f = g.expires
+	  }
+	  d = "; expires=" + f.toUTCString()
+	}
+	var c = "; path=" + (g.path || "/");
+	var a = g.domain ? "; domain=" + g.domain : "";
+	var b = g.secure ? "; secure" : "";
+	document.cookie = [r, "=", h, d, c, a, b].join("")
+}
+
+
+function setEncodeCookie(r, h, g) {
+	g = g || {};
+	if (h === null) {
+	  h = "";
+	  g.expires = -1
+	}
+	var d = "";
+	if (g.expires && (typeof g.expires == "number" || g.expires.toUTCString)) {
+	  var f;
+	  if (typeof g.expires == "number") {
+		  f = new Date;
+		  f.setTime(f.getTime() + g.expires * 24 * 60 * 60 * 1e3)
+	  } else {
+		  f = g.expires
+	  }
+	  d = "; expires=" + f.toUTCString()
+	}
+	var c = "; path=" + (g.path || "/");
+	var a = g.domain ? "; domain=" + g.domain : "";
+	var b = g.secure ? "; secure" : "";
+	document.cookie = [r, "=", encodeURIComponent(h), d, c, a, b].join("")
+}
+
+if(!(getCookie("uid") && getCookie("ac_loNa"))) {
+    var wi = getQueryStr("wi");
+    if(wi != undefined && wi != '') {
+        setCookie("cps_wi", wi, {
+            expires: 1,
+            domain: "hihonor.com"
+        });
+    }
+	
+	var wi = getCookie("cps_wi");
+	if(wi != undefined && wi != '') {
+        setCookie("cps_wi", wi, {
+            expires: 1,
+            domain: "hihonor.com"
+        });
+    } 
+} else {
+	var wi = getCookie("cps_wi");
+	if(wi != undefined && wi != '') {
+        setEncodeCookie("cps_wi", wi, {
+            expires: 1,
+            domain: "hihonor.com"
+        });
+    }
+}</script>
+        </div>
+        <div class="s-main ">
+            <ul>
+                <li id="unlogin_status">
+                    <div id="top_unlogin" class="i-login">
+                            <a href="https://hnid-drcn.cloud.hihonor.com/CAS/portal/userRegister/regbyphone.html?service=https%3A%2F%2Fhnoauth-login.cloud.hihonor.com%2Foauth2%2Fv3%2Fauthorize%3Fresponse_type%3Dcode%26client_id%3D103747863%26redirect_uri%3Dhttps%253A%252F%252Fwww.hihonor.com%252Fcn%252Fshop%252Faccount%252FloginWithCode%253Furl%253Dhttps%25253A%25252F%25252Fwww.hihonor.com%25252Fcn%25252Fshop%26scope%3Demail%2Bprofile%2Bopenid%2Bhttps%253A%252F%252Fwww.hihonor.com%252Fauth%252Faccount%252Fbase.profile%2Bhttps%253A%252F%252Fwww.hihonor.com%252Fauth%252Faccount%252Faccountlist%2Bhttps%253A%252F%252Fwww.hihonor.com%252Fauth%252Faccount%252Fbirthday%26access_type%3Doffline%26lang%3Dzh-cn%26themeName%3Dblue%26login_channel%3D26000000%26req_client_type%3D26%26sL%3D0&loginChannel=26000000&reqClientType=26&lang=zh-cn" rel="nofollow" onclick = "pushLoginMsg('注册','')">&nbsp;&nbsp;注册</a>
+                            <a id="top-index-loginUrl" href="javascript:;" rel="nofollow" onclick="pushLoginMsgInfoPerson('登录','')">登录</a>
+                    </div>
+                </li>
+                <li id="login_status" class="hide">
+                    <div id="top_login" class="s-dropdown hide">
+                        <div id="red_point" class="h">
+                                <a class="icon-dropdown" href="https://www.hihonor.com/cn/shop/v/member?t=1711803062132" rel="nofollow" target="_blank" onclick = "pushLoginMsg('已登录','用户名')"><span id="up_loginName"></span></a>&nbsp;
+                        </div>
+                        <div class="b">
+                            <div class="dropdown-person"> 
+                                <ul>
+                                    <li class="icon-information">
+                                            <a href="https://www.hihonor.com/cn/shop/v/member?t=1711803062132" rel="nofollow"  target="_blank" onclick = "pushLoginMsg('已登录','我的商城')">我的商城</a>
+                                    </li>
+                                    <li class="icon-logout">
+                                          <a href="javascript:;" onclick="ec.logout()" rel="nofollow">退出登录</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                
+                <li><a href="javascript:;" onclick = "pushMyOrderMsg()">我的订单</a></li>
+                
+                    <li>
+                        <div class="s-dropdown s-dropdown-minicart">
+                            <div class="h h-wide" id="header-toolbar-minicart">
+                                <a href="https://www.hihonor.com/cn/shop/v/cart" class="icon-minicart" rel="nofollow" target="_blank" onclick = "pushMyCartMsg()">
+                                    <span>购物车(<span id="header-cart-total">0</span>)</span>
+                                </a>
+                            </div>
+                            <div class="b" id="header-toolbar-minicart-content">
+                                <!-- 2017-06-19-迷你购物车-start -->
+                                <div class="dropdown-minicart">
+                                    <div class="minicart-pro-empty minicart-pro-empty-index" id="minicart-pro-empty">
+                                        <p><span class="icon-minicart"></span></p>
+                                        <p id="cartInfo" >购物车商品加载中，请稍后~</p>
+                                        <a class="hide minicartBtn" href="https://www.hihonor.com/cn/shop">去逛逛吧</a>
+                                    </div>
+                                    <div class="minicart-pro-list minicart-pro-list-scroll hide" id="minicart-pro-list-block">
+                                        <ul id="minicart-goods-list"></ul>
+                                        <div class="minicart-pro-settleup" id="minicart-pro-settleup">
+                                            <p>
+                                                <span>总计：</span>
+                                                <span><b id="micro-cart-totalPrice">&yen;&nbsp;0</b><s id="micro-cart-totalOriginPrice">&yen;&nbsp;0</s></span>
+                                            </p>
+                                            <a class="button-minicart" id="button-minicart-go2confirm" href="javascript:;" onclick="ec.minicart.confirm()" >结算</a>
+                                            <a class="button-minicart disabled" id="disbutton-minicart-go2confirm" href="javascript:;" style="display:none;">结算</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- 2017-06-19-迷你购物车-end -->
+                            </div>
+                            <!-- vue订单确认页开关 -->
+                            <div class="hide web_vue_checkout_enable" attr="<p>
+    true
+</p>"></div>
+                            <!-- vue大购物车开关 -->
+                            <div class="hide web_vue_cart_enable " attr="<p>
+    true
+</p>"></div>
+                            <!-- vue个人中心开关 -->
+                            <div class="hide web_vue_personal_enable " attr="<p>true</p>"></div>
+                        </div>
+                    </li>
+                
+                 <li class="downloadApp">
+                 	<div class="s-dropdown" data-tpl="jTplDownloadApp">
+                 		<div class="h">
+							<a class="icon-dropdown">手机端</a>
+					 	</div>
+					</div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!-- 2017-06-19-捷径栏-end -->
+
+<script type="text/javascript">
+var accountCenterUrl="https://hnid-drcn.cloud.hihonor.com/AMW/portal/userCenter/index.html?reqClientType=25&loginChannel=25000000&themeName=cloudTheme&lang=zh-cn";
+var isHomePage="true";
+ec.mediaPath = "https://hshop.honorfile.com/pimages/";
+checkIEVersion();
+</script>
+
+<script id="ec-binding-phone" type="text/x-template">
+    <div id="ec-binding-phone-1" class="ec-binding-phone-box hide">
+        <!-- 20141011-绑定安全手机号提示-start -->
+        <div class="box-phone01">
+            <div class="h">
+                <i></i>
+            </div>
+            <div class="b">
+                <p class="title">绑定手机号码</p>
+                <p>为了给您提供更好的服务，建议您将登录的邮箱账号进行手机号码绑定，绑定后邮箱账号和绑定的手机号码都可以作为登录账号，<em class="red">不绑定将不能提交订单。</em></p>
+            </div>
+        </div>
+        <div class="box-button">
+            <a class="box-ok" href="javascript:;" id="ec-binding-phone-url-1"><span>立即绑定</span></a></a>
+        </div>
+        <!-- 20141011-绑定安全手机号提示-end -->
+    </div>
+    <div id="ec-binding-phone-2" class="ec-binding-phone-box hide">
+        <!-- 20141424-绑定安全手机号提示-start -->
+        <div class="box-phone01">
+            <div class="h">
+                <i></i>
+            </div>
+            <div class="b">
+                <p class="title">绑定手机号码</p>
+                <p>请您在新打开的页面中完成绑定手机号操作，完成绑定后请根据您的情况点击下面的按钮。</p>
+            </div>
+        </div>
+        <div class="box-button">
+            <a class="box-cancel" href="javascript:;" id="ec-binding-phone-url-2"><span>重新绑定</span></a>
+            <a class="box-ok" href="javascript:;" onclick="ec.binding.resetShow()"><span>绑定成功</span></a>
+        </div>
+        <!-- 20141424-绑定安全手机号提示-end -->
+    </div>
+    <div id="ec-binding-phone-3" class="ec-binding-phone-box hide">
+        <!-- 20141424-安全手机号绑定提示失败-start -->
+        <div class="box-phone01">
+            <div class="h">
+                <i></i>
+            </div>
+            <div class="b">
+                <p class="title">对不起，您未成功绑定手机号</p>
+                <p>为了您在商城正常购物、保护您的权益，请您绑定一个手机号码以享受荣耀商城的所有服务。</p>
+            </div>
+        </div>
+        <div class="box-button">
+            <a href="javascript:;" class="box-ok" onclick="ec.binding.showOk()" id="ec-binding-phone-url-3" ><span>立即绑定</span></a>
+        </div>
+        <!-- 20141424-安全手机号绑定提示失败-end -->
+    </div>
+    <div id="ec-binding-phone-4" class="ec-binding-phone-box hide">
+        <!-- 20150824-手机号绑定未绑定-start -->
+        <div class="box-phone01">
+            <div class="h">
+                <i></i>
+            </div>
+            <div class="b">
+                <p class="title">绑定手机号码</p>
+                <p>为了给您提供更好的服务，建议您将登录的邮箱账号进行手机号码绑定，绑定后邮箱账号和绑定的手机号码都可以作为登录账号；<em class="red">自</em><em id="bindEndDate4State4" class="red"></em><em class="red">号起，若不绑定将不能提交订单。</em></p>
+            </div>
+        </div>
+        <div class="box-button">
+            <a class="box-cancel" href="javascript:;" onclick="ec.binding.closeState4();"><span>下次再说</span></a>
+            <a class="box-ok" href="javascript:;" id="ec-binding-phone-url-4"><span>立即绑定</span></a>
+        </div>
+        <!-- 20150824-安全手机号绑定提示失败-end -->
+    </div>
+    <div id="ec-binding-phone-5" class="ec-binding-phone-box hide">
+        <!-- 20141424-安全手机号绑定提示失败-start -->
+        <div class="box-phone01">
+            <div class="h">
+                <i></i>
+            </div>
+            <div class="b">
+                <p class="title">绑定手机号码</p>
+                <p>您输入的手机已被注册，您可以选择使用手机号重新登录或者重新绑定手机！</p>
+            </div>
+        </div>
+        <div class="box-button">
+            <a class="box-cancel" href="https://www.hihonor.com/cn/shop/account/login" id="ec-binding-phone-reLogin-5"><span>重新登录</span></a>')
+            <a class="box-ok" href="javascript:;" id="ec-binding-phone-url-5"><span>重新绑定</span></a>
+        </div>
+        <!-- 20141424-安全手机号绑定提示失败-end -->
+    </div>
+</script>
+
+<script type="text/x-template" id="jTplDownloadApp">
+<div class="b"><div class="dropdown-code"><div class="clearfix dropdown-code-detail"><a href="https://www.hihonor.com/cn/shop/appdownload" target="_blank"><img class="code-img" src="https://file05.c.hihonor.com/pimages//pages/templateContent/60739310101611393706.png" title="aec64809-edcc-4351-c9ab-d3a554073efd.png"/></a> 
+ &nbsp; &nbsp;<div class="code-info"><h2>荣耀商城APP<br/></h2><p class="red">新人专享好礼<br/><!-- for WeLink copy-->免费领耳机赠品券</p><span class="icon-andrid fl mgr-5"></span><span class="icon-ios fl"></span><span class="icon-wechat fl"></span></div></div><div class="clearfix dropdown-code-detail"><a><img class="code-img" src="https://file05.c.hihonor.com/pimages//pages/cdnImages/47095277880617259074.jpg"/></a> 
+ &nbsp; &nbsp;<div class="code-info"><h2>荣耀商城公众号</h2><p>微信扫一扫</p><span class="icon-wechat"></span> &nbsp; &nbsp; &nbsp;</div></div><div class="clearfix dropdown-code-detail"><a><img class="code-img" src="https://file05.c.hihonor.com/pimages//pages/cdnImages/17587377880617378571.jpg"/></a> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<div class="code-info"><h2>微信小程序</h2><span class="icon-wechat"></span> &nbsp; &nbsp; &nbsp;</div></div></div></div>
+</script><!-- 2017-02-15-头部-start -->
+<div class="header">
+    <div class="layout">
+        <div class="left">
+            <div class="logo">
+                <a href="https&#x3a;&#x2f;&#x2f;www.hihonor.com&#x2f;cn&#x2f;shop&#x2f;" title="荣耀商城" onclick = "pushIndexLogoClickMsg('https\x3A\x2F\x2Ffile07.c.hihonor.com\x2Fpimages\x2F\x2Fcommon\x2Fimages\x2F71596708931610769517.png','https\x3A\x2F\x2Fwww.hihonor.com\x2Fcn\x2Fshop\x2F')">
+                    <img src="https&#x3a;&#x2f;&#x2f;file07.c.hihonor.com&#x2f;pimages&#x2f;&#x2f;common&#x2f;images&#x2f;71596708931610769517.png" alt="荣耀商城"/>
+                </a>
+            </div>
+            <div class="virtual-category" id="virtual-category">
+                <span class="naver-title"><a>商品分类</a></span>
+                        <ul class="naver-content">
+                            <li class="naver-item" attr="0">
+                                  <!-- 如果是虚拟分类 -->
+                                    <a href="https://www.hihonor.com/cn/shop/v/search?categoryId=36" class="LevelTwo" target = "_blank">手机</a>
+                                    <div class="naver-sub-wrap">
+                                        <ul class="p-list clearfix">
+                                                <li class="p-items ">
+                                                      <!-- 如果是虚拟分类 -->
+                                                        <a href="https://www.hihonor.com/cn/shop/v/search?categoryId=878" class="LevelThree" >
+                                                        <p class="p-img">
+                                                                <img alt="荣耀V Purse系列" src="https://hshop.honorfile.com/pimages//pages/frontCategory/36268582159618586263.png">
+                                                        </p>
+                                                        <div class="p-title">荣耀V Purse系列</div>
+                                                    </a>
+                                                </li>
+                                                <li class="p-items ">
+                                                      <!-- 如果是虚拟分类 -->
+                                                        <a href="https://www.hihonor.com/cn/shop/v/search?categoryId=820" class="LevelThree" target = "_blank">
+                                                        <p class="p-img">
+                                                                <img alt="荣耀 Magic系列" src="https://hshop.honorfile.com/pimages//pages/frontCategory/74313149740714131347.png">
+                                                        </p>
+                                                        <div class="p-title">荣耀 Magic系列</div>
+                                                    </a>
+                                                </li>
+                                                <li class="p-items ">
+                                                      <!-- 如果是虚拟分类 -->
+                                                        <a href="https://www.hihonor.com/cn/shop/v/search?categoryId=666" class="LevelThree" target = "_blank">
+                                                        <p class="p-img">
+                                                                <img alt="荣耀 数字系列" src="https://hshop.honorfile.com/pimages//pages/frontCategory/79328101230710182397.png">
+                                                        </p>
+                                                        <div class="p-title">荣耀 数字系列</div>
+                                                    </a>
+                                                </li>
+                                                <li class="p-items ">
+                                                      <!-- 如果是虚拟分类 -->
+                                                        <a href="https://www.hihonor.com/cn/shop/v/search?categoryId=668" class="LevelThree" target = "_blank">
+                                                        <p class="p-img">
+                                                                <img alt="荣耀 X系列" src="https://hshop.honorfile.com/pimages//pages/frontCategory/40728049740714082704.png">
+                                                        </p>
+                                                        <div class="p-title">荣耀 X系列</div>
+                                                    </a>
+                                                </li>
+                                                <li class="p-items ">
+                                                      <!-- 如果是虚拟分类 -->
+                                                        <a href="https://www.hihonor.com/cn/shop/v/search?categoryId=77" class="LevelThree" target = "_blank">
+                                                        <p class="p-img">
+                                                                <img alt="荣耀 Play系列" src="https://hshop.honorfile.com/pimages//pages/frontCategory/71680021230712008617.png">
+                                                        </p>
+                                                        <div class="p-title">荣耀 Play系列</div>
+                                                    </a>
+                                                </li>
+                                        </ul>
+                                        <div class="naver-sub-btn">
+                                              <!-- 如果是虚拟分类 -->
+                                                <a href="https://www.hihonor.com/cn/shop/v/search?categoryId=36" target = "_blank"><span>更多产品</span></a>
+                                        </div>
+                                    </div>
+                            </li>
+                            <li class="naver-item" attr="1">
+                                  <!-- 如果是虚拟分类 -->
+                                    <a href="https://www.hihonor.com/cn/shop/v/search?categoryId=676" class="LevelTwo" target = "_blank">笔记本</a>
+                                    <div class="naver-sub-wrap">
+                                        <ul class="p-list clearfix">
+                                                <li class="p-items ">
+                                                      <!-- 如果是虚拟分类 -->
+                                                        <a href="https://www.hihonor.com/cn/shop/v/search?categoryId=888" class="LevelThree" target = "_blank">
+                                                        <p class="p-img">
+                                                                <img alt="荣耀MagicBook Pro系列" src="https://hshop.honorfile.com/pimages//pages/frontCategory/07324290301719242370.png">
+                                                        </p>
+                                                        <div class="p-title">荣耀MagicBook Pro系列</div>
+                                                    </a>
+                                                </li>
+                                                <li class="p-items ">
+                                                      <!-- 如果是虚拟分类 -->
+                                                        <a href="https://www.hihonor.com/cn/shop/v/search?categoryId=688" class="LevelThree" target = "_blank">
+                                                        <p class="p-img">
+                                                                <img alt="荣耀MagicBook数字系列" src="https://hshop.honorfile.com/pimages//pages/frontCategory/76900618919611600967.png">
+                                                        </p>
+                                                        <div class="p-title">荣耀MagicBook数字系列</div>
+                                                    </a>
+                                                </li>
+                                                <li class="p-items ">
+                                                      <!-- 如果是虚拟分类 -->
+                                                        <a href="https://www.hihonor.com/cn/shop/v/search?categoryId=892" class="LevelThree" target = "_blank">
+                                                        <p class="p-img">
+                                                                <img alt="荣耀笔记本 X Plus系列" src="https://hshop.honorfile.com/pimages//pages/frontCategory/29631661801716613692.png">
+                                                        </p>
+                                                        <div class="p-title">荣耀笔记本 X Plus系列</div>
+                                                    </a>
+                                                </li>
+                                                <li class="p-items ">
+                                                      <!-- 如果是虚拟分类 -->
+                                                        <a href="https://www.hihonor.com/cn/shop/v/search?categoryId=690" class="LevelThree" target = "_blank">
+                                                        <p class="p-img">
+                                                                <img alt="荣耀笔记本 X系列" src="https://hshop.honorfile.com/pimages//pages/frontCategory/87451218140711215478.png">
+                                                        </p>
+                                                        <div class="p-title">荣耀笔记本 X系列</div>
+                                                    </a>
+                                                </li>
+                                                <li class="p-items ">
+                                                      <!-- 如果是虚拟分类 -->
+                                                        <a href="https://www.hihonor.com/cn/shop/v/search?categoryId=734" class="LevelThree" target = "_blank">
+                                                        <p class="p-img">
+                                                                <img alt="个人电脑配件" src="https://hshop.honorfile.com/pimages//pages/frontCategory/70068276980617286007.png">
+                                                        </p>
+                                                        <div class="p-title">个人电脑配件</div>
+                                                    </a>
+                                                </li>
+                                                <li class="p-items ">
+                                                      <!-- 如果是虚拟分类 -->
+                                                        <a href="https://www.hihonor.com/cn/shop/v/search?categoryId=814" class="LevelThree" target = "_blank">
+                                                        <p class="p-img">
+                                                                <img alt="电脑包" src="https://hshop.honorfile.com/pimages//pages/frontCategory/36387887335618878363.png">
+                                                        </p>
+                                                        <div class="p-title">电脑包</div>
+                                                    </a>
+                                                </li>
+                                        </ul>
+                                        <div class="naver-sub-btn">
+                                              <!-- 如果是虚拟分类 -->
+                                                <a href="https://www.hihonor.com/cn/shop/v/search?categoryId=676" target = "_blank"><span>更多产品</span></a>
+                                        </div>
+                                    </div>
+                            </li>
+                            <li class="naver-item" attr="2">
+                                  <!-- 如果是虚拟分类 -->
+                                    <a href="https://www.hihonor.com/cn/shop/v/search?categoryId=678" class="LevelTwo" target = "_blank">平板</a>
+                                    <div class="naver-sub-wrap">
+                                        <ul class="p-list clearfix">
+                                                <li class="p-items ">
+                                                      <!-- 如果是虚拟分类 -->
+                                                        <a href="https://www.hihonor.com/cn/shop/v/search?categoryId=876" class="LevelThree" target = "_blank">
+                                                        <p class="p-img">
+                                                                <img alt="荣耀 Magic系列" src="https://hshop.honorfile.com/pimages//pages/frontCategory/99790971298617909799.png">
+                                                        </p>
+                                                        <div class="p-title">荣耀 Magic系列</div>
+                                                    </a>
+                                                </li>
+                                                <li class="p-items ">
+                                                      <!-- 如果是虚拟分类 -->
+                                                        <a href="https://www.hihonor.com/cn/shop/v/search?categoryId=700" class="LevelThree" target = "_blank">
+                                                        <p class="p-img">
+                                                                <img alt="荣耀平板 V系列" src="https://hshop.honorfile.com/pimages//pages/frontCategory/03174101230710147130.jpg">
+                                                        </p>
+                                                        <div class="p-title">荣耀平板 V系列</div>
+                                                    </a>
+                                                </li>
+                                                <li class="p-items ">
+                                                      <!-- 如果是虚拟分类 -->
+                                                        <a href="https://www.hihonor.com/cn/shop/v/search?categoryId=696" class="LevelThree" target = "_blank">
+                                                        <p class="p-img">
+                                                                <img alt="荣耀平板 数字系列" src="https://hshop.honorfile.com/pimages//pages/frontCategory/96578401230710487569.png">
+                                                        </p>
+                                                        <div class="p-title">荣耀平板 数字系列</div>
+                                                    </a>
+                                                </li>
+                                                <li class="p-items ">
+                                                      <!-- 如果是虚拟分类 -->
+                                                        <a href="https://www.hihonor.com/cn/shop/v/search?categoryId=698" class="LevelThree" target = "_blank">
+                                                        <p class="p-img">
+                                                                <img alt="荣耀平板 X系列" src="https://hshop.honorfile.com/pimages//pages/frontCategory/12201701230710710221.jpg">
+                                                        </p>
+                                                        <div class="p-title">荣耀平板 X系列</div>
+                                                    </a>
+                                                </li>
+                                                <li class="p-items ">
+                                                      <!-- 如果是虚拟分类 -->
+                                                        <a href="https://www.hihonor.com/cn/shop/v/search?categoryId=736" class="LevelThree" >
+                                                        <p class="p-img">
+                                                                <img alt="荣耀平板配件" src="https://hshop.honorfile.com/pimages//pages/frontCategory/96730401230710403769.png">
+                                                        </p>
+                                                        <div class="p-title">荣耀平板配件</div>
+                                                    </a>
+                                                </li>
+                                        </ul>
+                                        <div class="naver-sub-btn">
+                                              <!-- 如果是虚拟分类 -->
+                                                <a href="https://www.hihonor.com/cn/shop/v/search?categoryId=678" target = "_blank"><span>更多产品</span></a>
+                                        </div>
+                                    </div>
+                            </li>
+                            <li class="naver-item" attr="3">
+                                  <!-- 如果是虚拟分类 -->
+                                    <a href="https://www.hihonor.com/cn/shop/v/search?categoryId=59" class="LevelTwo" target = "_blank">智能穿戴</a>
+                                    <div class="naver-sub-wrap">
+                                        <ul class="p-list clearfix">
+                                                <li class="p-items ">
+                                                      <!-- 如果是虚拟分类 -->
+                                                        <a href="https://www.hihonor.com/cn/shop/v/search?categoryId=247" class="LevelThree" target = "_blank">
+                                                        <p class="p-img">
+                                                                <img alt="智能手表" src="https://hshop.honorfile.com/pimages//pages/frontCategory/22005676179617650022.png">
+                                                        </p>
+                                                        <div class="p-title">智能手表</div>
+                                                    </a>
+                                                </li>
+                                                <li class="p-items ">
+                                                      <!-- 如果是虚拟分类 -->
+                                                        <a href="https://www.hihonor.com/cn/shop/v/search?categoryId=241" class="LevelThree" target = "_blank">
+                                                        <p class="p-img">
+                                                                <img alt="智能手环" src="https://hshop.honorfile.com/pimages//pages/frontCategory/23861826701712816832.png">
+                                                        </p>
+                                                        <div class="p-title">智能手环</div>
+                                                    </a>
+                                                </li>
+                                                <li class="p-items ">
+                                                      <!-- 如果是虚拟分类 -->
+                                                        <a href="https://www.hihonor.com/cn/shop/v/search?categoryId=672" class="LevelThree" target = "_blank">
+                                                        <p class="p-img">
+                                                                <img alt="智能体脂秤" src="https://hshop.honorfile.com/pimages//pages/frontCategory/29066042127614066092.png">
+                                                        </p>
+                                                        <div class="p-title">智能体脂秤</div>
+                                                    </a>
+                                                </li>
+                                                <li class="p-items ">
+                                                      <!-- 如果是虚拟分类 -->
+                                                        <a href="https://www.hihonor.com/cn/shop/v/search?categoryId=674" class="LevelThree" target = "_blank">
+                                                        <p class="p-img">
+                                                                <img alt="儿童手表" src="https://hshop.honorfile.com/pimages//pages/frontCategory/43544029350712044534.jpg">
+                                                        </p>
+                                                        <div class="p-title">儿童手表</div>
+                                                    </a>
+                                                </li>
+                                        </ul>
+                                        <div class="naver-sub-btn">
+                                              <!-- 如果是虚拟分类 -->
+                                                <a href="https://www.hihonor.com/cn/shop/v/search?categoryId=59" target = "_blank"><span>更多产品</span></a>
+                                        </div>
+                                    </div>
+                            </li>
+                            <li class="naver-item" attr="4">
+                                  <!-- 如果是虚拟分类 -->
+                                    <a href="https://www.hihonor.com/cn/shop/v/search?categoryId=716" class="LevelTwo" target = "_blank">智能路由</a>
+                                    <div class="naver-sub-wrap">
+                                        <ul class="p-list clearfix">
+                                                <li class="p-items ">
+                                                                                                            <a href="https://www.hihonor.com/cn/shop/product/10086327040610.html" class="LevelThree" >
+                                                        <p class="p-img">
+                                                                <img alt="荣耀路由4 Pro" src="https://hshop.honorfile.com/pimages//pages/frontCategory/40079568164616597004.png">
+                                                        </p>
+                                                        <div class="p-title">荣耀路由4 Pro</div>
+                                                    </a>
+                                                </li>
+                                                <li class="p-items ">
+                                                                                                            <a href="https://www.hihonor.com/cn/shop/product/10086490813402.html" class="LevelThree" >
+                                                        <p class="p-img">
+                                                                <img alt="荣耀路由4" src="https://hshop.honorfile.com/pimages//pages/frontCategory/31711035914613011713.png">
+                                                        </p>
+                                                        <div class="p-title">荣耀路由4</div>
+                                                    </a>
+                                                </li>
+                                                <li class="p-items ">
+                                                                                                            <a href="https://www.hihonor.com/cn/shop/product/10086752553528.html" class="LevelThree" target = "_blank">
+                                                        <p class="p-img">
+                                                                <img alt="荣耀路由X4 Pro" src="https://hshop.honorfile.com/pimages//pages/frontCategory/96908156327615180969.png">
+                                                        </p>
+                                                        <div class="p-title">荣耀路由X4 Pro</div>
+                                                    </a>
+                                                </li>
+                                        </ul>
+                                        <div class="naver-sub-btn">
+                                              <!-- 如果是虚拟分类 -->
+                                                <a href="https://www.hihonor.com/cn/shop/v/search?categoryId=716" target = "_blank"><span>更多产品</span></a>
+                                        </div>
+                                    </div>
+                            </li>
+                            <li class="naver-item" attr="5">
+                                  <!-- 如果是虚拟分类 -->
+                                    <a href="https://www.hihonor.com/cn/shop/v/search?categoryId=646" class="LevelTwo" target = "_blank">智慧屏</a>
+                                    <div class="naver-sub-wrap">
+                                        <ul class="p-list clearfix">
+                                                <li class="p-items ">
+                                                                                                            <a href="https://www.hihonor.com/cn/shop/product/10086079188454.html" class="LevelThree" target = "_blank">
+                                                        <p class="p-img">
+                                                                <img alt="荣耀智慧屏5" src="https://hshop.honorfile.com/pimages//pages/frontCategory/18148901230710984181.png">
+                                                        </p>
+                                                        <div class="p-title">荣耀智慧屏5</div>
+                                                    </a>
+                                                </li>
+                                                <li class="p-items ">
+                                                                                                            <a href="https://www.hihonor.com/cn/shop/product/10086366318869.html" class="LevelThree" target = "_blank">
+                                                        <p class="p-img">
+                                                                <img alt="荣耀智慧屏X3" src="https://hshop.honorfile.com/pimages//pages/frontCategory/91194011230711049119.png">
+                                                        </p>
+                                                        <div class="p-title">荣耀智慧屏X3</div>
+                                                    </a>
+                                                </li>
+                                                <li class="p-items ">
+                                                                                                            <a href="https://www.hihonor.com/cn/shop/product/10086949580931.html" class="LevelThree" target = "_blank">
+                                                        <p class="p-img">
+                                                                <img alt="荣耀智慧屏X3i" src="https://hshop.honorfile.com/pimages//pages/frontCategory/65995011230711059956.png">
+                                                        </p>
+                                                        <div class="p-title">荣耀智慧屏X3i</div>
+                                                    </a>
+                                                </li>
+                                        </ul>
+                                        <div class="naver-sub-btn">
+                                              <!-- 如果是虚拟分类 -->
+                                                <a href="https://www.hihonor.com/cn/shop/v/search?categoryId=646" target = "_blank"><span>更多产品</span></a>
+                                        </div>
+                                    </div>
+                            </li>
+                            <li class="naver-item" attr="6">
+                                  <!-- 如果是虚拟分类 -->
+                                    <a href="https://www.hihonor.com/cn/shop/v/search?categoryId=652" class="LevelTwo" target = "_blank">耳机音箱</a>
+                                    <div class="naver-sub-wrap">
+                                        <ul class="p-list clearfix">
+                                                <li class="p-items ">
+                                                      <!-- 如果是虚拟分类 -->
+                                                        <a href="https://www.hihonor.com/cn/shop/v/search?categoryId=656" class="LevelThree" target = "_blank">
+                                                        <p class="p-img">
+                                                                <img alt="真无线耳机" src="https://hshop.honorfile.com/pimages//pages/frontCategory/68649438290713494686.png">
+                                                        </p>
+                                                        <div class="p-title">真无线耳机</div>
+                                                    </a>
+                                                </li>
+                                                <li class="p-items ">
+                                                      <!-- 如果是虚拟分类 -->
+                                                        <a href="https://www.hihonor.com/cn/shop/v/search?categoryId=654" class="LevelThree" target = "_blank">
+                                                        <p class="p-img">
+                                                                <img alt="有线耳机" src="https://hshop.honorfile.com/pimages//pages/frontCategory/8GZSNEOIyFTlKHGXJIUp.jpg">
+                                                        </p>
+                                                        <div class="p-title">有线耳机</div>
+                                                    </a>
+                                                </li>
+                                                <li class="p-items ">
+                                                                                                            <a href="https://www.hihonor.com/cn/shop/product/10086727698641.html" class="LevelThree" >
+                                                        <p class="p-img">
+                                                                <img alt="荣耀Earbuds X6" src="https://hshop.honorfile.com/pimages//pages/frontCategory/85707074700717070758.png">
+                                                        </p>
+                                                        <div class="p-title">荣耀Earbuds X6</div>
+                                                    </a>
+                                                </li>
+                                        </ul>
+                                        <div class="naver-sub-btn">
+                                              <!-- 如果是虚拟分类 -->
+                                                <a href="https://www.hihonor.com/cn/shop/v/search?categoryId=652" target = "_blank"><span>更多产品</span></a>
+                                        </div>
+                                    </div>
+                            </li>
+                            <li class="naver-item" attr="7">
+                                  <!-- 如果是虚拟分类 -->
+                                    <a href="https://www.hihonor.com/cn/shop/v/search?categoryId=54" class="LevelTwo" target = "_blank">配件</a>
+                                    <div class="naver-sub-wrap">
+                                        <ul class="p-list clearfix">
+                                                <li class="p-items ">
+                                                      <!-- 如果是虚拟分类 -->
+                                                        <a href="https://www.hihonor.com/cn/shop/v/search?categoryId=58" class="LevelThree" target = "_blank">
+                                                        <p class="p-img">
+                                                                <img alt="充电器/线材" src="https://hshop.honorfile.com/pimages//pages/frontCategory/31255741974614755213.png">
+                                                        </p>
+                                                        <div class="p-title">充电器/线材</div>
+                                                    </a>
+                                                </li>
+                                                <li class="p-items ">
+                                                      <!-- 如果是虚拟分类 -->
+                                                        <a href="https://www.hihonor.com/cn/shop/v/search?categoryId=734" class="LevelThree" target = "_blank">
+                                                        <p class="p-img">
+                                                                <img alt="个人电脑配件" src="https://hshop.honorfile.com/pimages//pages/frontCategory/88582776980617728588.png">
+                                                        </p>
+                                                        <div class="p-title">个人电脑配件</div>
+                                                    </a>
+                                                </li>
+                                                <li class="p-items ">
+                                                      <!-- 如果是虚拟分类 -->
+                                                        <a href="https://www.hihonor.com/cn/shop/v/search?categoryId=736" class="LevelThree" target = "_blank">
+                                                        <p class="p-img">
+                                                                <img alt="平板配件" src="https://hshop.honorfile.com/pimages//pages/frontCategory/80189933119613998108.png">
+                                                        </p>
+                                                        <div class="p-title">平板配件</div>
+                                                    </a>
+                                                </li>
+                                                <li class="p-items ">
+                                                      <!-- 如果是虚拟分类 -->
+                                                        <a href="https://www.hihonor.com/cn/shop/v/search?categoryId=650" class="LevelThree" target = "_blank">
+                                                        <p class="p-img">
+                                                                <img alt="智慧屏配件" src="https://hshop.honorfile.com/pimages//pages/frontCategory/05660047524614006650.png">
+                                                        </p>
+                                                        <div class="p-title">智慧屏配件</div>
+                                                    </a>
+                                                </li>
+                                                <li class="p-items ">
+                                                      <!-- 如果是虚拟分类 -->
+                                                        <a href="https://www.hihonor.com/cn/shop/v/search?categoryId=588" class="LevelThree" target = "_blank">
+                                                        <p class="p-img">
+                                                                <img alt="穿戴配件" src="https://hshop.honorfile.com/pimages//pages/frontCategory/22958973011617985922.png">
+                                                        </p>
+                                                        <div class="p-title">穿戴配件</div>
+                                                    </a>
+                                                </li>
+                                                <li class="p-items ">
+                                                      <!-- 如果是虚拟分类 -->
+                                                        <a href="https://www.hihonor.com/cn/shop/v/search?categoryId=580" class="LevelThree" target = "_blank">
+                                                        <p class="p-img">
+                                                                <img alt="保护壳" src="https://hshop.honorfile.com/pimages//pages/frontCategory/21507481119618470512.png">
+                                                        </p>
+                                                        <div class="p-title">保护壳</div>
+                                                    </a>
+                                                </li>
+                                                <li class="p-items ">
+                                                      <!-- 如果是虚拟分类 -->
+                                                        <a href="https://www.hihonor.com/cn/shop/v/search?categoryId=584" class="LevelThree" target = "_blank">
+                                                        <p class="p-img">
+                                                                <img alt="贴膜" src="https://hshop.honorfile.com/pimages//pages/frontCategory/61016469823616461016.png">
+                                                        </p>
+                                                        <div class="p-title">贴膜</div>
+                                                    </a>
+                                                </li>
+                                                <li class="p-items ">
+                                                      <!-- 如果是虚拟分类 -->
+                                                        <a href="https://www.hihonor.com/cn/shop/v/search?categoryId=814" class="LevelThree" target = "_blank">
+                                                        <p class="p-img">
+                                                                <img alt="电脑包" src="https://hshop.honorfile.com/pimages//pages/frontCategory/92293818695611839229.png">
+                                                        </p>
+                                                        <div class="p-title">电脑包</div>
+                                                    </a>
+                                                </li>
+                                        </ul>
+                                        <div class="naver-sub-btn">
+                                              <!-- 如果是虚拟分类 -->
+                                                <a href="https://www.hihonor.com/cn/shop/v/search?categoryId=54" target = "_blank"><span>更多产品</span></a>
+                                        </div>
+                                    </div>
+                            </li>
+                            <li class="naver-item" attr="8">
+                                  <!-- 如果是虚拟分类 -->
+                                    <a href="https://www.hihonor.com/cn/shop/v/search?categoryId=43" class="LevelTwo" target = "_blank">生态产品</a>
+                                    <div class="naver-sub-wrap">
+                                        <ul class="p-list clearfix">
+                                                <li class="p-items ">
+                                                      <!-- 如果是虚拟分类 -->
+                                                        <a href="https://www.hihonor.com/cn/shop/v/search?categoryId=407" class="LevelThree" target = "_blank">
+                                                        <p class="p-img">
+                                                                <img alt="影音娱乐" src="https://hshop.honorfile.com/pimages//pages/frontCategory/07972266769616227970.jpg">
+                                                        </p>
+                                                        <div class="p-title">影音娱乐</div>
+                                                    </a>
+                                                </li>
+                                                <li class="p-items ">
+                                                      <!-- 如果是虚拟分类 -->
+                                                        <a href="https://www.hihonor.com/cn/shop/v/search?categoryId=381" class="LevelThree" target = "_blank">
+                                                        <p class="p-img">
+                                                                <img alt="个护美妆" src="https://hshop.honorfile.com/pimages//pages/frontCategory/98285209207610258289.png">
+                                                        </p>
+                                                        <div class="p-title">个护美妆</div>
+                                                    </a>
+                                                </li>
+                                                <li class="p-items ">
+                                                      <!-- 如果是虚拟分类 -->
+                                                        <a href="https://www.hihonor.com/cn/shop/v/search?categoryId=423" class="LevelThree" target = "_blank">
+                                                        <p class="p-img">
+                                                                <img alt="数码周边" src="https://hshop.honorfile.com/pimages//pages/frontCategory/32098391756619389023.png">
+                                                        </p>
+                                                        <div class="p-title">数码周边</div>
+                                                    </a>
+                                                </li>
+                                                <li class="p-items ">
+                                                      <!-- 如果是虚拟分类 -->
+                                                        <a href="https://www.hihonor.com/cn/shop/v/search?categoryId=379" class="LevelThree" target = "_blank">
+                                                        <p class="p-img">
+                                                                <img alt="安防门锁" src="https://hshop.honorfile.com/pimages//pages/frontCategory/19031419087611413091.png">
+                                                        </p>
+                                                        <div class="p-title">安防门锁</div>
+                                                    </a>
+                                                </li>
+                                                <li class="p-items ">
+                                                      <!-- 如果是虚拟分类 -->
+                                                        <a href="https://www.hihonor.com/cn/shop/v/search?categoryId=421" class="LevelThree" target = "_blank">
+                                                        <p class="p-img">
+                                                                <img alt="生活电器" src="https://hshop.honorfile.com/pimages//pages/frontCategory/02919745027614791920.png">
+                                                        </p>
+                                                        <div class="p-title">生活电器</div>
+                                                    </a>
+                                                </li>
+                                                <li class="p-items ">
+                                                      <!-- 如果是虚拟分类 -->
+                                                        <a href="https://www.hihonor.com/cn/shop/v/search?categoryId=377" class="LevelThree" target = "_blank">
+                                                        <p class="p-img">
+                                                                <img alt="厨电卫浴" src="https://hshop.honorfile.com/pimages//pages/frontCategory/43985956769615958934.png">
+                                                        </p>
+                                                        <div class="p-title">厨电卫浴</div>
+                                                    </a>
+                                                </li>
+                                        </ul>
+                                        <div class="naver-sub-btn">
+                                              <!-- 如果是虚拟分类 -->
+                                                <a href="https://www.hihonor.com/cn/shop/v/search?categoryId=43" target = "_blank"><span>更多产品</span></a>
+                                        </div>
+                                    </div>
+                            </li>
+                    </ul>
+            </div>
+             <div class="naver">
+                <ul class="clearfix">
+                </ul>
+            </div>
+        </div>
+<div class="right">
+    <div class="search-bar relative" id="searchBar-area">
+        <div class="search-bar-form" id="search-bar-form">
+           <form method="get" onsubmit="return search(this)">
+                <input type="text" class="text" maxlength="200" id="search-kw" autocomplete="off"/>
+                <input type="submit" class="button iconfont" value="&#xe604;"/>
+                                    <input type="hidden" id="channelType" name="channelType" value="0"/>
+                <input type="hidden" id="default-search" value="&#x8363;&#x8000;&#x20;8&#x7c;&#x8363;&#x8000;&#x20;9"/>
+            </form>
+        </div>
+        <div class="search-bar-key" id="search-bar-key">
+                <div class="searchBar-key">
+                                        <a href="javascript:void(0);" style="color:"   rel="nofollow">&#x8363;&#x8000;Magic6&#x7cfb;&#x5217;</a>
+                                        <a href="javascript:void(0);" style="color:"   rel="nofollow">&#x8363;&#x8000;100</a>
+                                        <a href="javascript:void(0);" style="color:"   rel="nofollow">&#x8363;&#x8000;X50</a>
+                                        <a href="javascript:void(0);" style="color:"   rel="nofollow">&#x8363;&#x8000;Play8T<em class="icon-fire"></em></a>
+                                        <a href="javascript:void(0);" style="color:"   rel="nofollow">&#x8363;&#x8000;V&#x20;Purse</a>
+                                        <a href="javascript:void(0);" style="color:"   rel="nofollow">&#x8363;&#x8000;&#x624b;&#x8868;4&#x20;Pro</a>
+                                        <a href="javascript:void(0);" style="color:"   rel="nofollow">&#x8363;&#x8000;Magic5&#x7cfb;&#x5217;</a>
+                                        <a href="javascript:void(0);" style="color:"   rel="nofollow">&#x8363;&#x8000;Magicbook&#x20;X&#x20;16</a>
+                                        <a href="javascript:void(0);" style="color:"   rel="nofollow">&#x8363;&#x8000;MagicBook&#x20;14&#x20;2023</a>
+                                        <a href="javascript:void(0);" style="color:"   rel="nofollow">&#x8363;&#x8000;&#x5e73;&#x677f;&#x20;V8&#x20;Pro</a>
+                                        <a href="javascript:void(0);" style="color:"   rel="nofollow">&#x8363;&#x8000;&#x89c2;&#x5f71;&#x773c;&#x955c;</a>
+                                        <a href="javascript:void(0);" style="color:"   rel="nofollow">&#x8363;&#x8000;&#x624b;&#x8868;GS&#x20;3</a>
+                                        <a href="javascript:void(0);" style="color:"   rel="nofollow">&#x624b;&#x673a;</a>
+                                        <a href="javascript:void(0);" style="color:"   rel="nofollow">&#x7b14;&#x8bb0;&#x672c;</a>
+                                        <a href="javascript:void(0);" style="color:"   rel="nofollow">&#x5e73;&#x677f;</a>
+                                        <a href="javascript:void(0);" style="color:"   rel="nofollow">&#x624b;&#x8868;</a>
+                                        <a href="javascript:void(0);" style="color:"   rel="nofollow">&#x8def;&#x7531;&#x5668;</a>
+                                        <a href="javascript:void(0);" style="color:"   rel="nofollow">&#x667a;&#x6167;&#x5c4f;</a>
+                                        <a href="javascript:void(0);" style="color:"   rel="nofollow">&#x624b;&#x73af;</a>
+                                        <a href="javascript:void(0);" style="color:"   rel="nofollow">&#x4ee5;&#x65e7;&#x6362;&#x65b0;</a>
+                                        <a href="javascript:void(0);" style="color:"   rel="nofollow">&#x624b;&#x5199;&#x7b14;</a>
+                                        <a href="javascript:void(0);" style="color:"   rel="nofollow">&#x773c;&#x955c;</a>
+                                        <a href="javascript:void(0);" style="color:"   rel="nofollow">&#x8363;&#x8000;&#x624b;&#x8868;GS&#x20;3i</a>
+                                        <a href="javascript:void(0);" style="color:"   rel="nofollow">&#x8363;&#x8000;&#x624b;&#x73af;7</a>
+                                        <a href="javascript:void(0);" style="color:"   rel="nofollow">&#x8363;&#x8000;Earbuds&#x20;X6</a>
+                                        <a href="javascript:void(0);" style="color:"   rel="nofollow">&#x8363;&#x8000;&#x94b1;&#x5305;&#x6298;&#x53e0;&#x5c4f;</a>
+                                        <a href="javascript:void(0);" style="color:"   rel="nofollow">&#x8363;&#x8000;&#x5e73;&#x677f;V8</a>
+                                        <a href="javascript:void(0);" style="color:"   rel="nofollow">X50&#x20;GT</a>
+                                        <a href="javascript:void(0);" style="color:"   rel="nofollow">90&#x20;GT</a>
+                                        <a href="javascript:void(0);" style="color:"   rel="nofollow">&#x8363;&#x8000;&#x624b;&#x8868;&#x20;GS&#x20;4</a>
+                </div>
+            </div>
+         <div class="search-bar-history">
+            <div class="con">
+                <ul class="search-link" style='display:none'>
+                </ul>
+            </div>
+                <input type="hidden" id="searchlinkBrandUrl" value=""/>
+                <input type="hidden" id="searchlinkClubUrl" value=""/>
+                <input type="hidden" id="searchlinkSupportUrl" value=""/>
+                <div id="search-history" class="con hide">
+                    <p>
+                        <label>历史记录</label><span id="cleanUp" class="search-history-btn">清除</span>
+                    </p>
+                    <ul id="search-history-list"></ul>
+                </div>
+                <div id="search-key" class="con hide">
+                    <p>
+                        <label>热门搜索</label>
+                    </p>
+                    <ul id="search-key-list"></ul>
+                </div>
+            </div>
+        </div>
+</div>    </div>
+</div>
+  
+<script type="text/javascript">
+ec.search.searchArr = JSON.parse('[{"activityUrl":"","fontColor":"","id":2160,"inSearchBox":1,"isActivityWords":0,"isAppointPrd":0,"priority":-291,"saleChannel":1,"tagType":0,"type":1,"word":"&#x8363;&#x8000;Magic6&#x7cfb;&#x5217;"},{"activityUrl":"","fontColor":"","id":2146,"inSearchBox":1,"isActivityWords":0,"isAppointPrd":0,"priority":-289,"saleChannel":1,"tagType":0,"type":1,"word":"&#x8363;&#x8000;100"},{"activityUrl":"","fontColor":"","id":2118,"inSearchBox":1,"isActivityWords":0,"isAppointPrd":0,"priority":-288,"saleChannel":1,"tagType":0,"type":1,"word":"&#x8363;&#x8000;X50"},{"activityUrl":"","fontColor":"","id":2156,"inSearchBox":1,"isActivityWords":0,"isAppointPrd":0,"priority":-287,"saleChannel":1,"tagType":1,"type":1,"word":"&#x8363;&#x8000;Play8T"},{"activityUrl":"","fontColor":"","id":2134,"inSearchBox":1,"isActivityWords":0,"isAppointPrd":0,"priority":-286,"saleChannel":1,"tagType":0,"type":1,"word":"&#x8363;&#x8000;V&#x20;Purse"},{"activityUrl":"","fontColor":"","id":2136,"inSearchBox":1,"isActivityWords":0,"isAppointPrd":0,"priority":-282,"saleChannel":1,"tagType":0,"type":1,"word":"&#x8363;&#x8000;&#x624b;&#x8868;4&#x20;Pro"},{"activityUrl":"","fontColor":"","id":2082,"inSearchBox":1,"isActivityWords":0,"isAppointPrd":0,"priority":-281,"saleChannel":1,"tagType":0,"type":1,"word":"&#x8363;&#x8000;Magic5&#x7cfb;&#x5217;"},{"activityUrl":"","fontColor":"","id":2120,"inSearchBox":1,"isActivityWords":0,"isAppointPrd":0,"priority":-278,"saleChannel":1,"tagType":0,"type":1,"word":"&#x8363;&#x8000;Magicbook&#x20;X&#x20;16"},{"activityUrl":"","fontColor":"","id":2106,"inSearchBox":1,"isActivityWords":0,"isAppointPrd":0,"priority":-277,"saleChannel":1,"tagType":0,"type":1,"word":"&#x8363;&#x8000;MagicBook&#x20;14&#x20;2023"},{"activityUrl":"","fontColor":"","id":2078,"inSearchBox":1,"isActivityWords":0,"isAppointPrd":0,"priority":-273,"saleChannel":1,"tagType":0,"type":1,"word":"&#x8363;&#x8000;&#x5e73;&#x677f;&#x20;V8&#x20;Pro"},{"activityUrl":"","fontColor":"","id":2090,"inSearchBox":1,"isActivityWords":0,"isAppointPrd":0,"priority":-272,"saleChannel":1,"tagType":0,"type":1,"word":"&#x8363;&#x8000;&#x89c2;&#x5f71;&#x773c;&#x955c;"},{"activityUrl":"","fontColor":"","id":2004,"inSearchBox":0,"isActivityWords":0,"isAppointPrd":0,"priority":-262,"saleChannel":1,"tagType":0,"type":1,"word":"Earbuds&#x20;3&#x20;Pro"},{"activityUrl":"","fontColor":"","id":1968,"inSearchBox":1,"isActivityWords":0,"isAppointPrd":0,"priority":-259,"saleChannel":1,"tagType":0,"type":1,"word":"&#x8363;&#x8000;&#x624b;&#x8868;GS&#x20;3"},{"activityUrl":"","fontColor":"","id":1708,"inSearchBox":1,"isActivityWords":0,"isAppointPrd":0,"priority":-233,"saleChannel":1,"tagType":0,"type":1,"word":"&#x624b;&#x673a;"},{"activityUrl":"","fontColor":"","id":1634,"inSearchBox":0,"isActivityWords":0,"isAppointPrd":0,"priority":-231,"saleChannel":1,"tagType":0,"type":1,"word":"&#x8033;&#x673a;"},{"activityUrl":"","fontColor":"","id":1646,"inSearchBox":1,"isActivityWords":0,"isAppointPrd":0,"priority":-230,"saleChannel":1,"tagType":0,"type":1,"word":"&#x7b14;&#x8bb0;&#x672c;"},{"activityUrl":"","fontColor":"","id":1648,"inSearchBox":1,"isActivityWords":0,"isAppointPrd":0,"priority":-229,"saleChannel":1,"tagType":0,"type":1,"word":"&#x5e73;&#x677f;"},{"activityUrl":"","fontColor":"","id":1644,"inSearchBox":1,"isActivityWords":0,"isAppointPrd":0,"priority":-228,"saleChannel":1,"tagType":0,"type":1,"word":"&#x624b;&#x8868;"},{"activityUrl":"","fontColor":"","id":1650,"inSearchBox":1,"isActivityWords":0,"isAppointPrd":0,"priority":-227,"saleChannel":1,"tagType":0,"type":1,"word":"&#x8def;&#x7531;&#x5668;"},{"activityUrl":"","fontColor":"","id":1710,"inSearchBox":1,"isActivityWords":0,"isAppointPrd":0,"priority":-226,"saleChannel":1,"tagType":0,"type":1,"word":"&#x667a;&#x6167;&#x5c4f;"},{"activityUrl":"","fontColor":"","id":1654,"inSearchBox":1,"isActivityWords":0,"isAppointPrd":0,"priority":-225,"saleChannel":1,"tagType":0,"type":1,"word":"&#x624b;&#x73af;"},{"activityUrl":"https&#x3a;&#x2f;&#x2f;honor.aihuishou.com","fontColor":"","id":1770,"inSearchBox":1,"isActivityWords":1,"isAppointPrd":0,"priority":-223,"saleChannel":1,"tagType":0,"type":1,"word":"&#x4ee5;&#x65e7;&#x6362;&#x65b0;"},{"activityUrl":"https&#x3a;&#x2f;&#x2f;www.hihonor.com&#x2f;cn&#x2f;sale&#x2f;education.html","fontColor":"","id":1844,"inSearchBox":0,"isActivityWords":1,"isAppointPrd":0,"priority":-214,"saleChannel":1,"tagType":0,"type":1,"word":"&#x6559;&#x80b2;&#x4f18;&#x60e0;"},{"activityUrl":"https&#x3a;&#x2f;&#x2f;www.hihonor.com&#x2f;cn&#x2f;sale&#x2f;qinxuan.html","fontColor":"","id":1860,"inSearchBox":0,"isActivityWords":1,"isAppointPrd":0,"priority":-213,"saleChannel":1,"tagType":0,"type":1,"word":"&#x667a;&#x6167;&#x751f;&#x6d3b;"},{"activityUrl":"","fontColor":"","id":2074,"inSearchBox":1,"isActivityWords":0,"isAppointPrd":0,"priority":-202,"saleChannel":1,"tagType":0,"type":1,"word":"&#x624b;&#x5199;&#x7b14;"},{"activityUrl":"","fontColor":"","id":2092,"inSearchBox":1,"isActivityWords":0,"isAppointPrd":0,"priority":-200,"saleChannel":1,"tagType":0,"type":1,"word":"&#x773c;&#x955c;"},{"activityUrl":"","fontColor":"","id":2094,"inSearchBox":1,"isActivityWords":0,"isAppointPrd":0,"priority":-199,"saleChannel":1,"tagType":0,"type":1,"word":"&#x8363;&#x8000;&#x624b;&#x8868;GS&#x20;3i"},{"activityUrl":"","fontColor":"","id":2096,"inSearchBox":1,"isActivityWords":0,"isAppointPrd":0,"priority":-198,"saleChannel":1,"tagType":0,"type":1,"word":"&#x8363;&#x8000;&#x624b;&#x73af;7"},{"activityUrl":"","fontColor":"","id":2150,"inSearchBox":1,"isActivityWords":0,"isAppointPrd":0,"priority":-197,"saleChannel":1,"tagType":0,"type":1,"word":"&#x8363;&#x8000;Earbuds&#x20;X6"},{"activityUrl":"","fontColor":"","id":2098,"inSearchBox":1,"isActivityWords":0,"isAppointPrd":0,"priority":-196,"saleChannel":1,"tagType":0,"type":1,"word":"&#x8363;&#x8000;&#x94b1;&#x5305;&#x6298;&#x53e0;&#x5c4f;"},{"activityUrl":"","fontColor":"","id":2110,"inSearchBox":1,"isActivityWords":0,"isAppointPrd":0,"priority":-195,"saleChannel":1,"tagType":0,"type":1,"word":"&#x8363;&#x8000;&#x5e73;&#x677f;V8"},{"activityUrl":"","fontColor":"","id":2168,"inSearchBox":1,"isActivityWords":0,"isAppointPrd":0,"priority":-194,"saleChannel":1,"tagType":0,"type":1,"word":"X50&#x20;GT"},{"activityUrl":"","fontColor":"","id":2170,"inSearchBox":1,"isActivityWords":0,"isAppointPrd":0,"priority":-193,"saleChannel":1,"tagType":0,"type":1,"word":"90&#x20;GT"},{"activityUrl":"","fontColor":"","id":2180,"inSearchBox":1,"isActivityWords":0,"isAppointPrd":0,"priority":-192,"saleChannel":1,"tagType":0,"type":1,"word":"&#x8363;&#x8000;&#x624b;&#x8868;&#x20;GS&#x20;4"}]' || null) || [];
+ec.ui.hover("#searchBar-area" , {captureInput : true });
+function pushIndexLogoClickMsg(adid, url) {
+  ec.dapClick(300010201, {
+    "ADID": adid,
+    "URL": url,
+    "click": "1"
+  });
+}
+ ec.code.addService({showService : true , showTools : true , live800Url4Web : "https://yoyo.hihonor.com/#/?botcode=21011",serviceRobotThirdUrl4web : "https://yoyo.hihonor.com/?botcode=21013"});
+
+</script>
+<script src="https://hshop.honorfile.com/2024022214/js/common/top.js"></script><!-- 轮播图 start-->
+<div class="hot-board hot-board-index" style="background-color:#f5f5f5;">
+	<div class="ec-slider" id="index_slider">
+	<ul>
+			<li ID='firstImg' class="ec-slider-item" style="background:url('https://hshop.honorfile.com/pimages//pages/picImages/01467281611718276410c.jpg') 50% 0px no-repeat ;background-size:1920px 550px">
+				<div style="width:100%;" class="ec-slider-item-img">
+						<img src="https://hshop.honorfile.com/pimages//pages/picImages/01467281611718276410c.jpg" style="display:none;"/>
+					<a style="width:100%;height:550px;display:block;" href="https://www.hihonor.com/cn/sale/newmagic6.html" target="_blank" onclick="pushSliderMsg('https://hshop.honorfile.com/pimages//pages/picImages/01467281611718276410c.jpg','https://www.hihonor.com/cn/sale/newmagic6.html','1')"></a>
+				</div>
+			</li>
+	</ul>
+</div>
+<ul></ul><ul></ul>
+
+<script>
+var indexSliderBtnDap = function(current, next) {
+	function backgroundImgUrl(a) {
+		return ((''+a).match(/^url\(\"(.+)\"\)$/) || [])[1] || '';
+	}
+	ec.dapClick('300010702', {
+		ADID: backgroundImgUrl($($('#index_slider ul li')[current]).css('background-image')),
+		URL: $($('#index_slider ul li')[current]).find('a').attr('href'),
+		nextADID: backgroundImgUrl($($('#index_slider ul li')[next]).css('background-image')),
+		nextURL: $($('#index_slider ul li')[next]).find('a').attr('href'),
+		location: current + 1,
+		nextLocation: next + 1,
+		click: 1
+	});
+};
+ec.ready(function(){
+			var liHtml = '<li class="ec-slider-item" style="background: url(\'https://hshop.honorfile.com/pimages//pages/picImages/08618478711717481680.jpg\') 50% 0px no-repeat; ; background-size:1920px 550px; width: 100%; height: 550px; display: none; position: absolute;">'
+			liHtml += "<div style=\"width:100%;\" class=\"ec-slider-item-img\"><a style=\"width:100%;height:550px;display:block;\" href=\"https://www.hihonor.com/cn/sale/hihonor.html\" target=\"_blank\" onclick=\"pushSliderMsg('https://hshop.honorfile.com/pimages//pages/picImages/08618478711717481680.jpg','https://www.hihonor.com/cn/sale/hihonor.html',2);\"></a></div>";
+			liHtml += '</li>';
+		  $("#index_slider").children("ul").append(liHtml);
+			var liHtml = '<li class="ec-slider-item" style="background: url(\'https://hshop.honorfile.com/pimages//pages/picImages/49410291611719201494.jpg\') 50% 0px no-repeat; ; background-size:1920px 550px; width: 100%; height: 550px; display: none; position: absolute;">'
+			liHtml += "<div style=\"width:100%;\" class=\"ec-slider-item-img\"><a style=\"width:100%;height:550px;display:block;\" href=\"https://www.hihonor.com/cn/shop/product/10086225609946.html\" target=\"_blank\" onclick=\"pushSliderMsg('https://hshop.honorfile.com/pimages//pages/picImages/49410291611719201494.jpg','https://www.hihonor.com/cn/shop/product/10086225609946.html',3);\"></a></div>";
+			liHtml += '</li>';
+		  $("#index_slider").children("ul").append(liHtml);
+			var liHtml = '<li class="ec-slider-item" style="background: url(\'https://hshop.honorfile.com/pimages//pages/picImages/78807510111711570887.png\') 50% 0px no-repeat; ; background-size:1920px 550px; width: 100%; height: 550px; display: none; position: absolute;">'
+			liHtml += "<div style=\"width:100%;\" class=\"ec-slider-item-img\"><a style=\"width:100%;height:550px;display:block;\" href=\"https://www.hihonor.com/cn/shop/product/10086871170109.html\" target=\"_blank\" onclick=\"pushSliderMsg('https://hshop.honorfile.com/pimages//pages/picImages/78807510111711570887.png','https://www.hihonor.com/cn/shop/product/10086871170109.html',4);\"></a></div>";
+			liHtml += '</li>';
+		  $("#index_slider").children("ul").append(liHtml);
+			var liHtml = '<li class="ec-slider-item" style="background: url(\'https://hshop.honorfile.com/pimages//pages/picImages/71863139380713136817.png\') 50% 0px no-repeat; ; background-size:1920px 550px; width: 100%; height: 550px; display: none; position: absolute;">'
+			liHtml += "<div style=\"width:100%;\" class=\"ec-slider-item-img\"><a style=\"width:100%;height:550px;display:block;\" href=\"https://www.hihonor.com/cn/sale/new.html\" target=\"_blank\" onclick=\"pushSliderMsg('https://hshop.honorfile.com/pimages//pages/picImages/71863139380713136817.png','https://www.hihonor.com/cn/sale/new.html',5);\"></a></div>";
+			liHtml += '</li>';
+		  $("#index_slider").children("ul").append(liHtml);
+
+ec.load("ec.slider", {
+	callback: function () {
+		var style = 3;
+		$("#index_slider").slider({
+			width: '100%', //必须
+			height: 550, //必须
+			style: style, //1显示分页，2只显示左右箭头,3两者都显示
+			pause: 5000, //间隔时间
+			auto: true,
+			minWidth: 1200,
+			showNumber: false,
+			btnPrevEvent: indexSliderBtnDap,
+			btnNextEvent: indexSliderBtnDap,
+			circleBtn: true
+		});
+	}
+});
+
+    setTimeout(function () {
+        $("#index_slider").children("ul").children("li").first().css('background-image', "url('https://hshop.honorfile.com/pimages//pages/picImages/01467281611718276410.jpg')");
+        $("#index_slider").children("ul").children("li").first().html("<div style=\"width:100%;\" class=\"ec-slider-item-img\"><a style=\"width:100%;height:550px;display:block;\" href=\"https://www.hihonor.com/cn/sale/newmagic6.html\" target=\"_blank\" onclick=\"pushSliderMsg('https://hshop.honorfile.com/pimages//pages/picImages/01467281611718276410.jpg','https://www.hihonor.com/cn/sale/newmagic6.html','1')\"></a></div>");
+    }, 7000);
+});
+
+//首页轮播数据上报
+function pushSliderMsg(adid,url,location) {
+	ec.dapClick('300010701', {
+		ADID: adid,
+		URL: url,
+		location: location,
+		click: 1
+	});
+}
+</script>
+</div>
+<!--首页弹出广告 start-->
+<!-- 热销单品区变装，左右两侧广告图 2.2.7.300 首页改版 运营控制不配 start -->
+	<div class="home-channel-menu">
+    <div class="layout relative">
+        <div class="channel-floor-0 relative">
+            <div class="h">
+                <div class="home-channel-main">
+                    <ul class="home-channel-list clearfix home-channel-img7">   
+                        <li class="fl s2">
+                           <ul class="clearfix">
+													<li>
+														<a href="https://www.hihonor.com/cn/shop/notice-list" target="_blank" onclick="pushMsgMenu(this, 1,'300010901','PC首页功能导航_\u5546\u57CE\u516C\u544A','https\x3A\x2F\x2Fwww.hihonor.com\x2Fcn\x2Fshop\x2Fnotice\x2Dlist')">
+															<div class="p-img">
+																<img class="img0" src="https://hshop.honorfile.com/pimages//pages/squaredInfo/69180745730714708196.png" alt="商城公告">
+															</div>
+		                                    			<div class="p-dec">商城公告</div></a>
+													</li>
+													<li>
+														<a href="https://www.hihonor.com/cn/shop/privilege" target="_blank" onclick="pushMsgMenu(this, 2,'300010901','PC首页功能导航_\u4F1A\u5458\u9886\u5238','https\x3A\x2F\x2Fwww.hihonor.com\x2Fcn\x2Fshop\x2Fprivilege')">
+															<div class="p-img">
+																<img class="img1" src="https://hshop.honorfile.com/pimages//pages/squaredInfo/84114645730714641148.png" alt="会员领券">
+															</div>
+		                                    			<div class="p-dec">会员领券</div></a>
+													</li>
+													<li>
+														<a href="https://www.hihonor.com/cn/sale/welcome.html" target="_blank" onclick="pushMsgMenu(this, 3,'300010901','PC首页功能导航_\u65B0\u4EBA\u798F\u5229','https\x3A\x2F\x2Fwww.hihonor.com\x2Fcn\x2Fsale\x2Fwelcome.html')">
+															<div class="p-img">
+																<img class="img2" src="https://hshop.honorfile.com/pimages//pages/squaredInfo/90975645730714657909.png" alt="新人福利">
+															</div>
+		                                    			<div class="p-dec">新人福利</div></a>
+													</li>
+													<li>
+														<a href="https://company.hihonor.com/cn#/" target="_blank" onclick="pushMsgMenu(this, 4,'300010901','PC首页功能导航_\u4F01\u4E1A\u7279\u60E0','https\x3A\x2F\x2Fcompany.hihonor.com\x2Fcn\x23\x2F')">
+															<div class="p-img">
+																<img class="img3" src="https://hshop.honorfile.com/pimages//pages/squaredInfo/62596645730714669526.png" alt="企业特惠">
+															</div>
+		                                    			<div class="p-dec">企业特惠</div></a>
+													</li>
+													<li>
+														<a href="https://www.hihonor.com/cn/shop/recycler/route" target="_blank" onclick="pushMsgMenu(this, 5,'300010901','PC首页功能导航_\u4EE5\u65E7\u6362\u65B0','https\x3A\x2F\x2Fwww.hihonor.com\x2Fcn\x2Fshop\x2Frecycler\x2Froute')">
+															<div class="p-img">
+																<img class="img4" src="https://hshop.honorfile.com/pimages//pages/squaredInfo/48102208290710220184.png" alt="以旧换新">
+															</div>
+		                                    			<div class="p-dec">以旧换新</div></a>
+													</li>
+													<li>
+														<a href="https://www.hihonor.com/cn/shop/priority" target="_blank" onclick="pushMsgMenu(this, 6,'300010901','PC首页功能导航_\u4F18\u8D2D\u7801','https\x3A\x2F\x2Fwww.hihonor.com\x2Fcn\x2Fshop\x2Fpriority')">
+															<div class="p-img">
+																<img class="img5" src="https://hshop.honorfile.com/pimages//pages/squaredInfo/70838645730714683807.png" alt="优购码">
+															</div>
+		                                    			<div class="p-dec">优购码</div></a>
+													</li>
+													<li>
+														<a href="https://www.hihonor.com/cn/shop/order/tcsProductIndex" target="_blank" onclick="pushMsgMenu(this, 7,'300010901','PC首页功能导航_\u8865\u8D2D\u4FDD\u969C','https\x3A\x2F\x2Fwww.hihonor.com\x2Fcn\x2Fshop\x2Forder\x2FtcsProductIndex')">
+															<div class="p-img">
+																<img class="img6" src="https://hshop.honorfile.com/pimages//pages/squaredInfo/32969645730714696923.png" alt="补购保障">
+															</div>
+		                                    			<div class="p-dec">补购保障</div></a>
+													</li>
+	                   	   </ul>
+                         </li>
+                    </ul>
+                </div>
+					<!-- 公告下方广告图index_top3_below_slider -->
+						<div class="hotSelling clearfix">
+							<div>
+								<h2 class="title-1">新品热销</h2>
+							</div>
+							<div>
+								<ul class="clearfix">
+									<ul class="home-promo-bigImg fl">
+											<li><a target="_blank" href="https://www.hihonor.com/cn/shop/product/10086016957595.html" class="item"><img alt="M6至臻" src="https://hshop.honorfile.com/pimages//pages/picImages/72483381611718338427.jpg" /></a></li>
+									</ul>
+									<ul class="home-promo-list fl">
+											<li><a target="_blank" href="https://www.hihonor.com/cn/shop/product/10086364050360.html" class="item"><img alt="90GT" src="https://hshop.honorfile.com/pimages//pages/picImages/75995761411716759957.png" /></a></li>
+											<li><a target="_blank" href="https://www.hihonor.com/cn/shop/product/10086047786144.html" class="item"><img alt="笔记本集显" src="https://hshop.honorfile.com/pimages//pages/picImages/06711610111711611760.png" /></a></li>
+											<li><a target="_blank" href="https://www.hihonor.com/cn/shop/product/10086803444642.html" class="item"><img alt="手表4 Pro" src="https://hshop.honorfile.com/pimages//pages/picImages/41046497890719464014.png" /></a></li>
+											<li><a target="_blank" href="https://www.hihonor.com/cn/shop/product/10086589420744.html" class="item"><img alt="100 " src="https://hshop.honorfile.com/pimages//pages/picImages/43691239380713219634.png" /></a></li>
+									</ul>
+								</ul>
+						</div>
+            </div>
+            <div class="b">
+            	<!--20170222 限时特惠 start-->
+<div class="home-recommend-goods index-channel-floor index-channel-special" id = "rushBuyTiming">
+	<div class="h special-title clearfix">
+        <h2 class="title">限时购</h2>
+        <div class="time" id="rushBuyTime"></div>
+    </div>
+    <div class="b" style="position:relative;">
+	    <div id="goodsRecommend" class="goods-rolling relative">
+	    	<ul id="" class="grid-list swiper-wrapper clearfix">
+	            <!--通过添加current 来实现 hover效果-->
+						<li class="grid-items swiper-slide">
+		                    <a class="thumb" target="_blank" onclick="pushMsgRushBuy(this,'10001070007802','1')" href="https://www.hihonor.com/cn/shop/product/10086875276511.html">
+		                        <div class="grid-info">
+									<p class="grid-img">
+									<img alt="" src="https://hshop.honorfile.com/pimages&#x2f;product&#x2f;6936520833887&#x2f;428_428_629F3196D9996D3F1BD6666DDCFE0A5C55FC9A7DECA19804mp.png">
+									</p>
+		                        </div>
+		                        <div class="grid-title">&#x8363;&#x8000;X50&#x20;GT</div>
+		                        <p class="grid-descs">&#x9a81;&#x9f99;8&#x2b;&#x6ee1;&#x5e27;&#x6218;&#x795e;&#x5f15;&#x64ce;</p>
+		                        <p class="grid-price">
+											<span class="promoPriceDesc">预估到手价<em>&yen;&nbsp;1999</em>
+												<s>&yen;&nbsp;2199</s>
+								</p> 
+		                    </a>
+		                </li>
+						<li class="grid-items swiper-slide">
+		                    <a class="thumb" target="_blank" onclick="pushMsgRushBuy(this,'10001050003303','2')" href="https://www.hihonor.com/cn/shop/product/10086254008709.html">
+		                        <div class="grid-info">
+									<p class="grid-img">
+									<img alt="" src="https://hshop.honorfile.com/pimages&#x2f;product&#x2f;6936520832682&#x2f;428_428_37879C0250C6869B2AFBEBE36368662A967F9E67B89B3971mp.png">
+									</p>
+		                        </div>
+		                        <div class="grid-title">&#x8363;&#x8000;Play8T</div>
+		                        <p class="grid-descs">&#x9650;&#x91cf;&#x8d60;&#x8033;&#x673a;</p>
+		                        <p class="grid-price">
+											<span class="promoPriceDesc">预估到手价<em>&yen;&nbsp;1009</em>
+												<s>&yen;&nbsp;1099</s>
+								</p> 
+		                    </a>
+		                </li>
+						<li class="grid-items swiper-slide">
+		                    <a class="thumb" target="_blank" onclick="pushMsgRushBuy(this,'10003040002701','3')" href="https://www.hihonor.com/cn/shop/product/10086727857417.html">
+		                        <div class="grid-info">
+									<p class="grid-img">
+									<img alt="" src="https://hshop.honorfile.com/pimages&#x2f;product&#x2f;6936520822379&#x2f;428_428_508C4A5D7DEEA338B84EA5327088525A2C44B69E2111B34Fmp.png">
+									</p>
+		                        </div>
+		                        <div class="grid-title">&#x8363;&#x8000;MagicBook&#x20;14&#x20;2023</div>
+		                        <p class="grid-descs">intel&#x20;13&#x4ee3;&#x6807;&#x538b;&#x5904;&#x7406;&#x5668;</p>
+		                        <p class="grid-price">
+											<span class="promoPriceDesc">预估到手价<em>&yen;&nbsp;4499</em>
+												<s>&yen;&nbsp;5199</s>
+								</p> 
+		                    </a>
+		                </li>
+						<li class="grid-items swiper-slide">
+		                    <a class="thumb" target="_blank" onclick="pushMsgRushBuy(this,'10001070002721','4')" href="https://www.hihonor.com/cn/shop/product/10086659393942.html">
+		                        <div class="grid-info">
+									<p class="grid-img">
+									<img alt="" src="https://hshop.honorfile.com/pimages&#x2f;product&#x2f;6936520831067&#x2f;428_428_0A3C4EDC4783BBCDDFA78FDC329E7FF6FBCB525960917741mp.png">
+									</p>
+		                        </div>
+		                        <div class="grid-title">&#x8363;&#x8000;X40&#x20;GT&#x7ade;&#x901f;&#x7248;</div>
+		                        <p class="grid-descs">&#x9a81;&#x9f99;888&#x51b7;&#x9177;&#x65d7;&#x8230;&#x82af;</p>
+		                        <p class="grid-price">
+											<span class="promoPriceDesc">预估到手价<em>&yen;&nbsp;1499</em>
+												<s>&yen;&nbsp;1799</s>
+								</p> 
+		                    </a>
+		                </li>
+						<li class="grid-items swiper-slide">
+		                    <a class="thumb" target="_blank" onclick="pushMsgRushBuy(this,'10001070005103','5')" href="https://www.hihonor.com/cn/shop/product/10086487257187.html">
+		                        <div class="grid-info">
+									<p class="grid-img">
+									<img alt="" src="https://hshop.honorfile.com/pimages&#x2f;product&#x2f;6936520828913&#x2f;428_428_A01082B41F1A8BC7241035FA3FDCEC764A95DC48788CD20Cmp.png">
+									</p>
+		                        </div>
+		                        <div class="grid-title">&#x8363;&#x8000;X50</div>
+		                        <p class="grid-descs">1.5K&#x5341;&#x9762;&#x6297;&#x6454;&#x62a4;&#x773c;&#x5c4f;</p>
+		                        <p class="grid-price">
+											<span class="promoPriceDesc">预估到手价<em>&yen;&nbsp;1269</em>
+												<s>&yen;&nbsp;1399</s>
+								</p> 
+		                    </a>
+		                </li>
+						<li class="grid-items swiper-slide">
+		                    <a class="thumb" target="_blank" onclick="pushMsgRushBuy(this,'10009040007502','6')" href="https://www.hihonor.com/cn/shop/product/10086999280913.html">
+		                        <div class="grid-info">
+									<p class="grid-img">
+									<img alt="" src="https://hshop.honorfile.com/pimages&#x2f;pages&#x2f;rushBuy&#x2f;82360619079611606328.png">
+									</p>
+		                        </div>
+		                        <div class="grid-title">&#x8363;&#x8000;&#x4eb2;&#x9009;&#x20;&#x8033;&#x673a;&#x20;X5s&#x20;Pro</div>
+		                        <p class="grid-descs">40&#x5c0f;&#x65f6;&#x8d85;&#x957f;&#x7eed;&#x822a;</p>
+		                        <p class="grid-price">
+											<span class="promoPriceDesc">预估到手价<em>&yen;&nbsp;179</em>
+												<s>&yen;&nbsp;249</s>
+								</p> 
+		                    </a>
+		                </li>
+			</ul>
+			
+		</div>
+		<div class="rushBtn">
+			<div class="grid-btn swiper-button-prev btn-prev"><span></span></div>
+        	<div class="grid-btn swiper-button-next btn-next"><span></span></div>
+			</div>
+    </div>
+</div>
+<script>
+$(function() {
+  $('#rushBuyTiming .goods-rolling').each(function() {
+    var xpathId = $(this).attr('id');
+    initSwiper('#' + xpathId, 4);
+  });
+});
+function pushMsgRushBuy(obj, skuCode, index) {
+  var url = $(obj).attr("href");
+  ec.dapClick(300011901, {
+    "SKUCode": skuCode,
+    "URL": url,
+    "location": index,
+    "click": "1"
+  });
+};
+
+function pushMsgRushBuyAd(obj, index) {
+  var url = $(obj).attr("href");
+  ec.dapClick(300011901, {
+    "ADID": $(obj).find('img').attr('src'),
+    "URL": url,
+    "location": index,
+    "click": "1"
+  });
+};
+</script>
+<script>
+var json = {};
+
+//倒计时
+ec.ui.countdown.special = function(selector, options) {
+    var obj = $(selector),
+    timer = obj.data("countdown"),
+    timeIndex = 0,
+    //当前倒数目标时间
+    preTarget,
+
+    //options = $.extend({}, options),
+    diff,
+    diffMs =  options.now.getTime() - new Date().getTime(),
+    diffSecs = 0,
+    getNext = function() {
+        if (timeIndex >= options.times.length) return false;
+        preTarget = options.times[timeIndex];
+        timeIndex++;
+
+        return true;
+    },
+    getDiffSec = function() {
+
+        diffSecs = Math.round((ec.util.parseDate(preTarget).getTime() - new Date().getTime() - diffMs) / 1000) + 1;
+        diffSecs = diffSecs <= 0 ? 0 : diffSecs;
+        return diffSecs;
+    },
+    render = function() {
+
+        diffSecs--;
+        if(diffSecs <= 0) {diffSecs=0;}
+        diff = {
+            day : Math.floor(diffSecs / (24*60*60)),
+            hour : (options.html.indexOf("{#day}") >= 0)
+                    ? Math.floor(diffSecs / 60 / 60 ) % 24
+                    : Math.floor(diffSecs / 60 / 60 ),
+            minute : Math.floor(diffSecs / 60) % 60,
+            second : diffSecs % 60
+        };
+
+        var html = options.html.replace(/{#day}/g , diff.day > 9 ? diff.day : "0" + diff.day).replace(/{#hours}/g, diff.hour > 9 ? diff.hour : "0" + diff.hour).replace(
+                /{#minutes}/g, diff.minute > 9 ? diff.minute : "0" + diff.minute).replace(/{#seconds}/g, diff.second > 9 ? diff.second : "0" + diff.second);
+        obj.html(html);
+		if(diff.day==0)
+		{
+			$("#rushDay").hide();
+		}
+		
+		if(diff.day==0 && diff.hour==0 && diff.minute==0 && diff.second==0)
+		{
+			$("#rushBuyTime").hide();
+			if((options.type == 1 || options.type == 3 || options.type == 4) && options.rType == "0" )
+			{
+				$("#rushBuyTiming").hide();
+				ec.index.SCROLL_GET = ec.index.getscrollLayout();
+			}
+			else
+			{
+				$("#rushBuyTiming").show();
+				ec.index.SCROLL_GET = ec.index.getscrollLayout();
+			}
+		}
+        return (diffSecs <=0) ? false : true;
+    };
+
+    if (!options.times) {
+        options.times = [ options.endTime ];
+    }
+
+    clearInterval(timer);
+    while (getNext()) {
+        if (getDiffSec() <= 0)
+            continue;
+        break;
+    }
+
+    if (!render()){return;}
+
+    timer = setInterval(function() {
+        if (!render()) {
+
+            if (options.callback){
+                options.callback(options);
+            }
+
+            if (!getNext()) {
+                clearInterval(timer);
+            } else {
+                getDiffSec();
+            }
+        }
+    }, 1000);
+
+    obj.data("countdown", timer);
+};
+
+var business={
+	  //服务器时间差值
+	  offsetTime:0,	
+	  //记录本地时间与服务器时间差值
+	  setOffsetTime:function(time1,time2){
+		  business.offsetTime = time2 - time1 ;  
+	  },	
+	  //获取服务器当前时间
+	  getSysDate:function(){
+		return new Date(new Date().getTime()+business.offsetTime);
+	  }
+};
+
+ec.ui.countdown.makeOptions = function(json) {
+	var nowDate =  json.now;
+	$("#rushBuyTime").html('<div id="pro-operation-countdown"></div>');
+	$("#rushBuyTime").css("visibility" , "visible").show();
+	var startTimeStr;
+	var rType = "";
+	var rushTimeHtml = '';
+	if (json.type == '1' || json.type == '2') {
+		if (typeof(json.starttime) === 'string') {
+			var nowST = new Date();
+			nowST.setHours(json.starttime.split(":")[0]);
+			nowST.setMinutes(json.starttime.split(":")[1]);
+			nowST.setSeconds(json.starttime.split(":")[2]);
+			json.starttime = nowST;
+		}
+		if (typeof(json.endtime) === 'string') {
+			var nowET = new Date();
+			nowET.setHours(json.endtime.split(":")[0]);
+			nowET.setMinutes(json.endtime.split(":")[1]);
+			nowET.setSeconds(json.endtime.split(":")[2]);
+			json.endtime = nowET;
+		}
+		if (Math.floor(nowDate.getTime()/1000) >= Math.floor(ec.util.parseDate(json.endtime).getTime()/1000)) {
+			json.starttime.setDate(nowDate.getDate()+1);
+			json.endtime.setDate(nowDate.getDate()+1);
+		}
+	} else {
+		if (typeof(json.starttime) === 'string') {
+			json.starttime = ec.util.parseDate(json.starttime);
+		}
+		if (typeof(json.endtime) === 'string') {
+			json.endtime = ec.util.parseDate(json.endtime);
+		}
+	}
+	if (Math.floor(nowDate.getTime()/1000) < Math.floor(ec.util.parseDate(json.starttime).getTime()/1000)) {
+		startTimeStr = ec.util.parseDate(json.starttime).format("yyyy-MM-dd HH:mm:ss");
+		if (json.type == '2' || json.type == '4') {
+			rushTimeHtml = "<p>距开始</p>";
+			rType = "";
+		} else {
+			$("#rushBuyTiming").hide();
+			ec.index.SCROLL_GET = ec.index.getscrollLayout();
+			rType = "0";
+		}
+	} else if (Math.floor(nowDate.getTime()/1000) < Math.floor(ec.util.parseDate(json.endtime).getTime()/1000)) {
+		startTimeStr = ec.util.parseDate(json.endtime).format("yyyy-MM-dd HH:mm:ss");
+		rushTimeHtml = "<p>距结束</p>";
+		if (json.type == '1' || json.type == '3' || json.type == '4') {
+			rType = "0";
+		}
+	} else {
+		$("#rushBuyTiming").hide();
+		ec.index.SCROLL_GET = ec.index.getscrollLayout();
+	}
+	return {
+		nowDate: nowDate, startTimeStr: startTimeStr, rType: rType, rushTimeHtml: rushTimeHtml
+	};
+}
+
+ec.ui.countdown.init = function(opts) {
+	if ( ! opts.startTimeStr) {
+		return false;
+	}
+	ec.ui.countdown.special($('#pro-operation-countdown'), {
+		html: opts.rushTimeHtml + '<p><p id="rushDay"><span class="time_day" data-day="{#day}">{#day}</span> 天 </p><span>{#hours}</span><em>:</em><span>{#minutes}</span><em>:</em><span>{#seconds}</span></p></li>',
+		now: opts.nowDate,
+		endTime: opts.startTimeStr,
+		type: json.type,
+		rType: opts.rType,
+		callback: function(r) {
+			//倒计时结束
+			$("#rushBuyTime").hide();
+			//清理旧的定时器
+			if (specialTimer) {
+				clearInterval(specialTimer);
+				specialTimer = null;
+			}
+			json.now = ec.util.parseDate(opts.startTimeStr);
+			ec.ui.countdown.init(ec.ui.countdown.makeOptions(json));
+		}
+	});
+	//记录当前定时器
+	specialTimer = $($('#pro-operation-countdown')).data("countdown");
+	//如果创建倒计时失败，则按照倒计时结束处理，覆盖 nowDate 与 startTime 差值为0的情况
+	if (!specialTimer) {
+		$("#rushBuyTime").html('');
+		//清理旧的定时器
+		if (specialTimer) {
+			clearInterval(specialTimer);
+			specialTimer = null;
+		}
+	}
+}
+
+$(document).ready(function(){
+	json = JSON.parse("&#x7b;&#x20;&quot;type&quot;&#x3a;&quot;1&quot;&#x20;,&quot;starttime&quot;&#x3a;&quot;00&#x3a;00&#x3a;00&quot;&#x20;,&quot;endtime&quot;&#x3a;&quot;23&#x3a;59&#x3a;59&quot;&#x20;&#x7d;".transHtmlAttribute());
+	var specialTimer=null;
+	business.setOffsetTime(new Date().getTime(),ec.product.getSysDate().getTime());
+	json.now = business.getSysDate();
+	var opts = ec.ui.countdown.makeOptions(json);
+	ec.ui.countdown.init(opts);
+});
+</script>
+		        <!--20170222 限时特惠 end-->
+            </div>
+            <div class="b">
+                <!--20170222 热销单品 start-->
+<!-- 20170222-首页--热销单品-start -->
+<div class="home-recommend-goods home-hot-goods index-channel-floor" id="mainSaleList">
+    <div class="h">
+        <h2 class="title change-title">热销单品</h2>
+    </div>
+    <div class="b clearfix">
+        <div class="span-468 fl">
+            <ul class="grid-promo-list clearfix">
+            		<input type="hidden" id="contengID" value="0-6">
+	                <li class="grid-items grid-items-sm">
+	                	<a class="thumb" href="https&#x3a;&#x2f;&#x2f;www.hihonor.com&#x2f;cn&#x2f;shop&#x2f;product&#x2f;10086397476973.html" target="_blank" onclick = "pushHomeHotGoodsAdvertMsg('https://hshop.honorfile.com/pimages\x2FfrontLocation\x2Fcontent\x2F43562751989615726534.png','https\x3A\x2F\x2Fwww.hihonor.com\x2Fcn\x2Fshop\x2Fproduct\x2F10086397476973.html')">
+	                		<img src="https://hshop.honorfile.com/pimages&#x2f;frontLocation&#x2f;content&#x2f;43562751989615726534.png" alt="" />
+	                    </a>
+	                </li>
+            </ul>
+        </div>
+        <div class="span-732 fl">
+            <ul class="grid-list clearfix">
+		                <!--通过添加current 来实现 hover效果-->
+		                <li class="grid-items ">
+		                    <a class="thumb" href="https://www.hihonor.com/cn/shop/product/10086487257187.html" target="_blank" onclick = "pushHomeHotGoodsMsg(this,2,'10086549785451')">
+		                        <p class="grid-img">
+										<img data-lazy-src="https://hshop.honorfile.com/pimages&#x2f;product&#x2f;6936520828913&#x2f;428_428_A01082B41F1A8BC7241035FA3FDCEC764A95DC48788CD20Cmp.png" alt="&#x8363;&#x8000;X50&#x20;8GB&#x2b;128GB&#x20;&#x96e8;&#x540e;&#x521d;&#x6674;&#x20;&#x53cc;&#x5361;&#x20;&#x5168;&#x7f51;&#x901a;"/>
+		                        </p>
+		                        <div class="grid-title">&#x8363;&#x8000;X50</div>
+		                        <p class="grid-desc">&#x6700;&#x9ad8;&#x4f18;&#x60e0;150&#x5143;&nbsp; </p>
+		                        <p class="grid-price">
+											<span class="promoPriceDesc">预估到手价<em>&yen;&nbsp;1269</em>
+												<s>&yen;&nbsp;1399</s>
+											</span>
+								</p>
+		                        <p class="grid-tips">
+	                        		<em class="thumb"><span class="color01" style="background-color:#68BEFF">&#x65b0;&#x54c1;</span></em>
+		                        </p>
+		                    </a>
+		                </li>
+		                <!--通过添加current 来实现 hover效果-->
+		                <li class="grid-items ">
+		                    <a class="thumb" href="https://www.hihonor.com/cn/shop/product/10086646535965.html" target="_blank" onclick = "pushHomeHotGoodsMsg(this,3,'10086634964852')">
+		                        <p class="grid-img">
+										<img data-lazy-src="https://hshop.honorfile.com/pimages&#x2f;product&#x2f;6936520834440&#x2f;428_428_079A68FA1B328C45A8C583C56AB197D80EADFF0594202F91mp.png" alt="&#x8363;&#x8000;100&#x20;Pro&#x20;12GB&#x2b;256GB&#x20;&#x83ab;&#x5948;&#x7d2b;&#x20;&#x53cc;&#x5361;&#x20;&#x5168;&#x7f51;&#x901a;&#x7248;"/>
+		                        </p>
+		                        <div class="grid-title">&#x8363;&#x8000;100&#x20;Pro</div>
+		                        <p class="grid-desc">&#x52a0;&#x8d60;&#x4f53;&#x8102;&#x79e4;&nbsp; </p>
+		                        <p class="grid-price">
+											<span class="promoPriceDesc">预估到手价<em>&yen;&nbsp;3199</em>
+												<s>&yen;&nbsp;3399</s>
+											</span>
+								</p>
+		                    </a>
+		                </li>
+		                <!--通过添加current 来实现 hover效果-->
+		                <li class="grid-items ">
+		                    <a class="thumb" href="https://www.hihonor.com/cn/shop/product/10086189960576.html" target="_blank" onclick = "pushHomeHotGoodsMsg(this,4,'10086597583058')">
+		                        <p class="grid-img">
+										<img data-lazy-src="https://hshop.honorfile.com/pimages&#x2f;product&#x2f;6936520825325&#x2f;428_428_3316A70A3B6AB5C94AEBE138C4D68EC86834127465B7E17Cmp.png" alt="&#x8363;&#x8000;90&#x20;12GB&#x2b;256GB&#x20;&#x51b0;&#x7fbd;&#x84dd;&#x20;&#x53cc;&#x5361;&#x20;&#x5168;&#x7f51;&#x901a;&#x7248;"/>
+		                        </p>
+		                        <div class="grid-title">&#x8363;&#x8000;90</div>
+		                        <p class="grid-desc">&#x9650;&#x65f6;&#x6700;&#x9ad8;&#x4f18;&#x60e0;400&#x5143;&nbsp; </p>
+		                        <p class="grid-price">
+											<span class="promoPriceDesc">预估到手价<em>&yen;&nbsp;1849</em>
+												<s>&yen;&nbsp;2499</s>
+											</span>
+								</p>
+		                    </a>
+		                </li>
+		                <!--通过添加current 来实现 hover效果-->
+		                <li class="grid-items ">
+		                    <a class="thumb" href="https://www.hihonor.com/cn/shop/product/10086427157985.html" target="_blank" onclick = "pushHomeHotGoodsMsg(this,5,'10086721904366')">
+		                        <p class="grid-img">
+										<img data-lazy-src="https://hshop.honorfile.com/pimages&#x2f;product&#x2f;6936520821556&#x2f;428_428_F4F484AF03E9281D27CE8C8ACE99AFF1E6120C6641B19AE2mp.png" alt="&#x8363;&#x8000;Magic5&#x20;12GB&#x2b;256GB&#x20;&#x71c3;&#x6a59;&#x8272;&#x20;&#x53cc;&#x5361;&#x20;&#x5168;&#x7f51;&#x901a;&#x7248;"/>
+		                        </p>
+		                        <div class="grid-title">&#x8363;&#x8000;Magic5</div>
+		                        <p class="grid-desc">&#x4eab;24&#x671f;&#x514d;&#x606f;&nbsp; </p>
+		                        <p class="grid-price">
+											<span class="promoPriceDesc">预估到手价<em>&yen;&nbsp;4199</em>
+												<s>&yen;&nbsp;4499</s>
+											</span>
+								</p>
+		                    </a>
+		                </li>
+		                <!--通过添加current 来实现 hover效果-->
+		                <li class="grid-items ">
+		                    <a class="thumb" href="https://www.hihonor.com/cn/shop/product/10086254008709.html" target="_blank" onclick = "pushHomeHotGoodsMsg(this,6,'10086534290455')">
+		                        <p class="grid-img">
+										<img data-lazy-src="https://hshop.honorfile.com/pimages&#x2f;product&#x2f;6936520832682&#x2f;428_428_37879C0250C6869B2AFBEBE36368662A967F9E67B89B3971mp.png" alt="&#x8363;&#x8000;Play8T&#x20;8GB&#x2b;256GB&#x20;&#x6d41;&#x5149;&#x94f6;&#x20;&#x53cc;&#x5361;&#x20;&#x5168;&#x7f51;&#x901a;&#x7248;"/>
+		                        </p>
+		                        <div class="grid-title">&#x8363;&#x8000;Play8T</div>
+		                        <p class="grid-desc">&#x9001;&#x793c;&#x597d;&#x7269;-&#x9650;&#x91cf;&#x8d60;&#x8033;&#x673a;&nbsp; </p>
+		                        <p class="grid-price">
+											<span class="promoPriceDesc">预估到手价<em>&yen;&nbsp;1009</em>
+												<s>&yen;&nbsp;1099</s>
+											</span>
+								</p>
+		                    </a>
+		                </li>
+		                <!--通过添加current 来实现 hover效果-->
+		                <li class="grid-items ">
+		                    <a class="thumb" href="https://www.hihonor.com/cn/shop/product/10086438621889.html" target="_blank" onclick = "pushHomeHotGoodsMsg(this,7,'10086515985244')">
+		                        <p class="grid-img">
+										<img data-lazy-src="https://hshop.honorfile.com/pimages&#x2f;product&#x2f;6936520830459&#x2f;428_428_4C9145B4F072C3D730766358553CEBB7F1B8E9501F4EA8EDmp.png" alt="&#x8363;&#x8000;&#x7545;&#x73a9;50&#x20;Plus&#x20;12GB&#x2b;256GB&#x20;&#x6d41;&#x5149;&#x94f6;&#x20;&#x53cc;&#x5361;&#x20;&#x5168;&#x7f51;&#x901a;"/>
+		                        </p>
+		                        <div class="grid-title">&#x8363;&#x8000;&#x7545;&#x73a9;50&#x20;Plus</div>
+		                        <p class="grid-desc">&#x9001;&#x793c;&#x597d;&#x7269;-6000mAh&#x5927;&#x7535;&#x6c60;&nbsp; </p>
+		                        <p class="grid-price">
+											<span>&yen;&nbsp;1399</span>
+								</p>
+		                    </a>
+		                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!-- 20170222-首页-热销单品-end -->
+<script>
+	function pushHomeHotGoodsAdvertMsg(adid, url) {
+	  ec.dapClick(300011301, {
+	    "ADID": adid,
+	    "URL": url,
+	    "location": "1",
+	    "click": "1"
+	  });
+	}
+	
+	function pushHomeHotGoodsMsg(obj,location,skuId)
+	{
+		var row;
+		var column;
+		if(location<6)
+		{
+			row = "1";
+			column = location;
+		}
+		else if(location<10)
+		{
+			row = "2";
+			column = location-4;
+		}
+		var url = obj.href;
+		ec.dapClick(300011401, {
+		  "SKUID": skuId,
+		  "URL": url,
+		  "location": location,
+		  "row": row,
+		  "column ": "" + column,
+		  "click": "1"
+		});
+	}
+</script>		        <!--20170222 热销单品 end-->
+            </div>
+         
+            <!--20170223 精品推荐 start-->
+         	<div class="b" id="j-goods-recommend"></div>
+	        <!--20170223 精品推荐 end-->
+
+            <div></div>
+        </div>
+    </div>
+</div>
+<!-- 2017-02-15-菜单栏-end -->
+
+<!-- 20160812 首页轮播图下方 end -->
+
+<div class="channel-floor index-channel-floor">
+    <div class="layout ">
+        <!-- 2017-02-15-banner-1200*110-start -->
+        <div class="home-banner">
+            <!-- 2017-02-15-banner-图片轮换-start -->
+            <div class="home-banner-slideshow" data-floor="0">
+                <!-- 20130903-ad-图片轮换-start -->
+<div class="banner-slideshow">
+	<div id="m-banner" class="ec-slider">
+		<ul class="ec-slider-list">
+							<li class="ec-slider-item" style="background:;"><div class="ec-slider-item-img"><a href="https://www.hihonor.com/cn/shop/recycler/route" onclick="_paq.push([&#39;trackLink&#39;,&#39;首页中间通栏广告第1位&#39;, &#39;link&#39;, &#39;&#39;]);ec.code.addAnalytics({hicloud:true});" target="_blank"><img src="https://hshop.honorfile.com/pimages//pages/picImages/70584551090715548507.png" /></a></div></li>
+		</ul>
+	</div>
+<div class="hr-13"></div>	
+	<script>
+		ec.load("ec.slider", {
+			loadType : "lazy",
+			callback : function() { 
+				$("#m-banner").slider({
+					width: 1200, //　必须
+					height: 120, //　必须
+					style : 1, //　1显示分页，2只显示左右箭头,3两者都显示
+					pause : 5000, 	//间隔时间
+                    auto : true
+				});
+			}
+		});
+		
+	</script>
+</div>
+            </div><!-- 2017-02-15-banner-图片轮换-end -->
+        </div><!-- 2017-02-15-banner-1200*110-end -->
+    </div>
+</div>
+
+
+<!-- 2017-05-12-HOME right side navigation -start -->		
+<!-- 2017-05-12-HOME right side navigation -end -->
+
+<!-- 2017-02-15-HOME GOOGLIST-start -->
+<div class="home-channel-container relative index-channel-floor" id="j-goods-list"></div>
+<!-- 2017-02-15-HOME GOOGLIST-end -->
+
+<!-- 2017-02-15-HOME FOOTER-start -->
+<div id="j-footer"></div>
+<!-- 2017-02-15-HOME FOOTER-start -->
+
+<!-- 2017-02-15-top-banner-start -->
+<script id="top-banner" type="text/x-template">
+	<!-- 顶部banner -->
+	<div class="top-banner-max hide" id="top-banner-max">
+		<div class="top-banner-img">
+			
+			<a title="折叠" href="javascript:;" class="button-top-banner-min" id="top-banner-max-toggle">-</a>
+		</div>
+	</div>
+	<div class="top-banner-min hide" id="top-banner-min">
+		<div class="top-banner-img">
+			
+			<a title="展开" href="javascript:;" class="button-top-banner-max hide" id="top-banner-min-toggle">+</a>
+			<a class="button-top-banner-close" href="javascript:;" title="关闭" id="top-banner-min-close">关闭</a>
+		</div>
+	</div>
+	<!-- 顶部banner end -->
+</script>
+<!-- 2017-02-15-top-banner-end -->
+<script>
+ec.pkg("ec.index");
+(function (_ec) {
+	//顶部banner
+	_ec.bigAd = false;
+	_ec.smallAd = false;
+	_ec.bigadShowTime = 8000;
+	_ec.now = new Date().format('yyyy-MM-dd HH:mm:ss');
+	_ec.configNowTime = function(){
+		if (_serverTime) {
+			_ec.now = ec.util.parseDate(_serverTime).format('yyyy-MM-dd HH:mm:ss');
+		}
+	}
+})(ec.index);
+</script>
+<script src="https://hshop.honorfile.com/2024022214/js/echannel/index.js"></script>
+<!-- 20211115 支付时风控参数传给IPS-->
+<script>
+  //风控参数
+  var tongdunRiskInfo = {"partner" : "Honor",   "appName" : "Honor_web",   "fpHost" : "https://fp.tongdun.net",   "imgLoaded" : true,   "imgLoadedSrc" : "https://fp.tongdun.net/fp/clear.png?",   "jssdkUrl" : "static.tongdun.net/v3/fm.js"};
+  var payRiskCtrConfig = isToJSON(tongdunRiskInfo);
+  var riskSwitch = 'true';
+  if(riskSwitch != true && riskSwitch != "true"){
+    localStorage.removeItem("blackbox");
+  }
+  function isToJSON(str) {
+    if (typeof str == 'string') {
+        try {
+            var obj=JSON.parse(str);
+            if(typeof obj == 'object' && obj ){
+                return obj;
+            }else{
+                return {};
+            }
+        } catch(e) {
+            console.log('error：'+str+'!!!'+e);
+            return {};
+        }
+    }
+    return str;
+  }
+</script>
+  <script src="https://hshop.honorfile.com/2024022214/js/common/payment-risk-control.js"></script>
+
+
+<!--确认对话框-->
+<div id="ec_ui_confirm" class="popup-area popup-define-area hide">
+    <div class="b">
+        <p id="ec_ui_confirm_msg"></p>
+        <div class="popup-button-area"><a id="ec_ui_confirm_yes" href="javascript:;" class="button-action-yes"><span>是</span></a><a id="ec_ui_confirm_no" href="javascript:;" class="button-action-no"><span>否</span></a></div>
+    </div>
+    <div class="f"><s class="icon-arrow-down"></s></div>
+</div>
+
+<!--新确认对话框-->
+<div id="ec_ui_confirm_new" class="popup-area-new hide">
+    <div class="b">
+        <p id="ec_ui_confirm_new_msg"></p>
+        <div class="popup-button-area"><a id="ec_ui_confirm_new_yes" href="javascript:;" class="box-button-style-1"><span>是</span></a><a id="ec_ui_confirm_new_no" href="javascript:;" class="box-button-style-1"><span>否</span></a></div>
+    </div>
+    <div class="f"><s class="icon-arrow-down-new"></s></div>
+</div>
+
+<!--提示对话框-->
+<div id="ec_ui_tips" class="popup-area popup-define-area hide">
+    <div class="b">
+        <p id="ec_ui_tips_msg" class="tac"></p>
+        <div class="popup-button-area tac"><a id="ec_ui_tips_yes" href="javascript:;" class="button-action-yes" title="确定"><span>确定</span></a></div>
+    </div>
+    <div class="f"><s class="icon-arrow-down"></s></div>
+</div>
+
+<div class="float-botton">
+    <div class="float-main common">
+        <div class="event-float-layout index-channel-floor">
+            <!--添加 fixed  position: fixed !important;top: 20px;z-index: 500;-->
+            <div class="event-float">
+                <div>
+                    <ul class="hover-list">
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- 2018-10-26-悬浮工具栏-start -->
+        <!-- 20170518-商品简介-按钮-start -->
+        <div class="hungBar j-hungBar">
+            <div class="hungBar-content">
+                                <div class="hungBar-common">
+                    <a target="_blank" onclick="pushRightHelpMsg(1)" href="javascript:;" class="hungBar-cart" ><span style="display:none;"></span><i>购物车</i></a>
+                    <a id="tools-nav-service-robotim" onclick = "pushRightServiceHelpMsg(2)" href="javascript:;" class="hungBar-service" ><i>在线客服</i></a>
+                    <input type="hidden" name="serviceHref" id="servicehrefId" value="" />
+                    <input type="hidden" name="serviceProxyHref" id="serviceProxyHrefId" value="" />
+                    <a id="tools-nav-survery" onclick = "pushRightHelpMsg(3)" href="https://www.hihonor.com/cn/shop/help/index.html" target="_blank" class="hungBar-feedback" ><i>自助服务</i></a>
+                </div>
+            </div>
+        </div>
+        <!-- 2018-10-26-悬浮工具栏-end -->
+    </div>
+    <div class="float-main backTop">
+        <div class="hungBar j-hungBar">
+            <div class="hungBar-common"><a href="javascript:;" class="hungBar-top"  id="hungBar-top"><i>返回顶部</i></a></div>
+        </div>
+    </div>
+</div>
+
+
+
+<!--意见反馈box-->
+<div id="survery-box" class="ol_box_4 hide" style="width:600px;">
+    <div class="box-ct">
+        <div class="box-header">
+            <div class="box-tl"></div>
+            <div class="box-tc">
+                <div class="box-tc1"></div>
+                <div class="box-tc2"><a class="box-close" title="关闭" onclick="ec.survery.close();" href="javascript:;"></a><span class="box-title">意见反馈</span></div>
+            </div>
+            <div class="box-tr"></div>
+        </div>
+        <table width="100%" cellspacing="0" cellpadding="0" border="0">
+            <tbody>
+            <tr>
+                <td class="box-cl"></td>
+                <td class="box-cc">
+                    <div class="box-content">
+                        <!-- -表单-意见反馈-start -->
+                        <div class="form-feedback-area">
+                            <div class="b">
+                                <div class="form-edit-area">
+                                    <form autocomplete="off" id="form-feedback">
+                                        <div class="form-edit-table">
+                                            <table cellspacing="0" cellpadding="0" border="0">
+                                                <tbody>
+                                                <tr>
+                                                    <td>
+                                                        <select name="type" id="surverytype">
+                                                            <option>请选择疑问类型</option>
+                                                            <option>商品质量（手机、平板等软、硬件质量）</option>
+                                                            <option>商品缺货</option>
+                                                            <option>物流发货（发货快慢、发错货、送件人态度等）</option>
+                                                            <option>售后服务（服务网点、维修、退换货、客服）</option>
+                                                            <option>网站问题（商城功能失效、不好用等）</option>
+                                                            <option>其他问题</option>
+                                                        </select>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <b>您的问题与建议</b><span id="errMsg"></span>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td><textarea name="content" id="surveryContent" type="textarea" class="textarea"></textarea></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><b>您的联系方式</b></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><input type="text" name="contact" id="surveryContact"></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <div class="fl">
+                                                            <input type="text" maxlength="4" class="identify" name="code" id="surveryVerify" onkeyup="if(this.value.length==4){ec.survery.validate();}">&nbsp;&nbsp;<img id="surveryVerifyImg" onclick="ec.survery.reloadCode()" class="vam" alt="验证码">&nbsp;&nbsp;&nbsp;&nbsp;<span class="vam"><a class="u" href="javascript:;" onclick="ec.survery.reloadCode();">换一张</a></span>
+                                                        </div>
+                                                        <div class="fr">
+                                                            <a href="javascript:;" onclick="ec.survery.submit();" class="button-action-yes"><span>提交</span></a>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- -表单-意见反馈-end -->
+                    </div>
+                </td>
+                <td class="box-cr"></td>
+            </tr>
+            </tbody>
+        </table>
+        <div class="box-bottom">
+            <div class="box-bl"></div>
+            <div class="box-bc"></div>
+            <div class="box-br"></div>
+        </div>
+    </div>
+</div>
+
+<div id="globleParameter" class="hide" context="https://www.hihonor.com/cn/shop" stylePath="https://hshop.honorfile.com/2024022214/css" scriptPath="https://hshop.honorfile.com/2024022214/js" imagePath="https://hshop.honorfile.com/2024022214/images" mediaPath="https://hshop.honorfile.com/pimages/" ></div>
+
+<form action="https://www.hihonor.com/cn/shop/order/confirmcart" id="miniCartForm" method="post"></form>
+
+<script>
+
+    ec.load("ec.box" , {loadType : "lazy"});
+    /**
+     *功能：给鼠标移动到s-dropdown上面的时候，记得给他多添加一个hover类样式
+     *目的是兼容ie6
+     */
+    $(function(){
+        $(".s-dropdown").hover(function(){
+            var jTpl = $(this).attr('data-tpl');
+            if (jTpl && $(this).find('.b').length < 1) {
+                $(this).append(document.getElementById(jTpl).innerHTML);
+                $(this).removeAttr('data-tpl');
+            }
+            $(this).addClass("hover");
+        },function(){
+            $(this).removeClass("hover");
+        });
+        var maxcolor=$('.top-banner-max').find('p').children('a').css("background-color");
+        var mincolor=$('.top-banner-min').find('p').children('a').css("background-color");
+
+        $('.top-banner-max').css({"background-color":maxcolor,overflow:"hidden"});
+        $('.top-banner-min').css({"background-color":mincolor,overflow:"hidden"});
+    });
+
+    //显示全球导航选择层
+    function showSelectRegion(){
+        var box = new ec.box($("#selectRegion-tips").val(),
+            {
+                boxid : "region-select-box",
+                boxclass : "ol_box_4",
+                title : "Please select your country or region",
+                width : 700,
+                showButton : false,
+                autoPosition:false,
+                onopen: function(box){
+                },
+                onok : function(box){
+                },
+                oncancel : function(box){
+                    box.close();
+                    $(".ol_box_mask").remove();
+                },
+                onclose : function(box){
+                    $(".ol_box_mask").remove();
+                }
+            });
+
+        box.open();
+
+        $(".box-title").css("font-size","24px");
+        $("#region-select-box").css("height","auto");
+        $(".ol_box_mask").click(function(){box.close();});
+
+        $(".box-header").unbind("mousemove");
+        $(".box-header").unbind("mousedown");
+
+        var divTop=document.getElementById("region-select-box").offsetTop;
+        $("#region-select-box").mousedown(function (e){
+            var e=e||window.event;
+            var region = document.getElementById("region-select-box");
+
+            var leftX = e.clientX - region.offsetLeft;
+            var topY = e.clientY - region.offsetTop;
+            $("#region-select-box").mousemove(function (event) {
+                var e=event||window.event;
+                var left=    e.clientX - leftX;
+                var top=e.clientY - topY;
+
+                if(e.clientX - leftX<20-region.offsetWidth){
+                    left=20-region.offsetWidth;
+                }
+                if(e.clientY - topY<20-region.offsetHeight){
+                    top=20-region.offsetHeight;
+                }
+
+                if(e.clientY - topY+20>=$(window).height()){
+                    top=$(window).height() - 20;
+                }
+                if(e.clientX - leftX+20>=$(window).width()){
+                    left=$(window).width() - 20;
+                }
+                $("#region-select-box").css({"left": left, "top": top});
+                divTop=top;
+
+            });
+        });
+        $("#region-select-box").mouseup(function () {
+            $("#region-select-box").unbind("mousemove");
+        });
+        $(window).scroll(function () {
+            $("#region-select-box").offset({ top: divTop });
+        });
+    }
+
+    ec.load("ec.slider", {
+        loadType : "lazy",
+        callback : function() {
+            $("#ec-erweima").slider({
+                width:     91, //必须
+                height:     96, //必须
+                style : 1,                    //1显示分页，2只显示左右箭头,3两者都显示
+                pause : 120000,           //间隔时间
+                auto : true
+            });
+        }
+    });
+
+    ec.ready(function(){
+        try
+        {
+            ec.minicart.readyContent();
+            var $miniCart = $('#header-toolbar-minicart-content');
+            $('#header-toolbar-minicart').hover(function (){
+                if(ec.checkBrowerIE()){
+                    var act = (document.activeElement || {}).id;
+                    if(act=='search-kw'){
+                        $("#search-kw").blur();
+                    }
+                }
+
+                $(this).unbind("mouseenter");
+                ec.minicart.content();
+            }, function (){
+                $(this).bind("mouseenter",function(){
+                    if(ec.checkBrowerIE()){
+                        var act = (document.activeElement || {}).id;
+                        if(act=='search-kw'){
+                            $("#search-kw").blur();
+                        }
+                    }
+
+                    $(this).unbind("mouseenter");
+                    ec.minicart.content();
+                });
+            });
+
+            $('#up_loginName-hover').hover(function (){
+                if(ec.checkBrowerIE()){
+                    var act = (document.activeElement || {}).id;
+                    if(act=='search-kw'){
+                        $("#search-kw").blur();
+                    }
+                }
+                $(this).unbind("mouseenter");
+            }, function (){
+                $(this).bind("mouseenter",function(){
+                    if(ec.checkBrowerIE()){
+                        var act = (document.activeElement || {}).id;
+                        if(act=='search-kw'){
+                            $("#search-kw").blur();
+                        }
+                    }
+                    $(this).unbind("mouseenter");
+                });
+            });
+
+        }catch (err){
+
+        }
+    });
+    // 更新购物车数字
+    $(function(){
+        $('.j-hungBar .hungBar-cart').hover(function(){
+            ec.minicart.updateMiniCartNum();
+        });
+    });
+
+
+    //百度站长工具，代码自动推送
+    (function(){
+        var bp = document.createElement('script');
+        var curProtocol = window.location.protocol.split(':')[0];
+        if (curProtocol === 'https'){
+            bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+        }
+        else{
+            bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+        }
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(bp, s);
+    })();
+
+    function pushMyOrderMsg() {
+        if (!ec.account.isLogin()) {
+            ec.dapClick(300450001, {
+                "sourceid": 18,
+                "load": 1
+            });
+        }
+        ec.account.afterLogin(function() {
+            var web_vue_personal_enable  = $('.web_vue_personal_enable').attr('attr'); 
+            if($.trim(web_vue_personal_enable) && web_vue_personal_enable.indexOf('true')>-1){
+                window.location.href = domainMain + '/v/member/order';
+            }else{
+                ec.redirectTo("https://www.hihonor.com/cn/shop/member/order?t=1711803062147");
+            }
+        });
+        ec.dapClick(300000301, {
+            "click": "1"
+        });
+    }
+
+    function pushlowService(){
+        var serviceHref = $("#servicehrefId").val();
+        if(!ec.account.isLogin()) {
+            ec.dapClick(300450001, {
+                "sourceid": 24,
+                "load": 1
+            });
+        }
+        ec.account.afterLogin(function() {
+            window.open(serviceHref, "_blank");
+        }, '', serviceHref);
+    }
+
+    function pushMyCartMsg() {
+        ec.dapClick(300000401, {
+            "click": "1"
+        });
+    }
+
+    function pushCartProMsg(skuId, url, location) {
+        ec.dapClick(300000402, {
+            "SKUID": skuId,
+            "URL": url,
+            "location": location,
+            "click": "1"
+        });
+    }
+
+    function pushFootAdvertMsg(name, url) {
+        ec.dapClick(300000501, {
+            "name": name,
+            "URL": url,
+            "click": "1"
+        });
+    }
+
+    $('#j-footer').on('click', '.footer-warrant-area  a', function() {
+      var dapData = {
+        "URL": $(this).attr("href"),
+        "click": "1"
+      };
+      if ($(this).find('img').length > 0) {
+        dapData.ADID = $(this).find("img").attr("src");
+      } else {
+        dapData.name = $(this).text();
+      }
+      ec.dapClick(300000502, dapData);
+    });
+
+    function pushRightServiceHelpMsg(index) {
+        if (!ec.account.isLogin()) {
+            // 判断是否是商详页
+            if(window.location.pathname.indexOf('/product')>-1){
+                ec.dapClick(300450001, {
+                "sourceid": 20,
+                "load": 1
+                })
+            }else{
+                ec.dapClick(300450001, {
+                "sourceid": 24,
+                "load": 1
+                });
+            }
+        }
+        //运营商编码
+        var serviceHrefSeCode = $("#serviceHelpSeCodeId").val();
+        //相应商品的sbomcode
+        var serviceHrefSbomcode = $("#serviceHelpSbomId").val();
+        //运营商名称
+        var serviceHelpSeName = $("#serviceHelpSeNameId").val();
+		
+		//品牌名称
+		var serviceHelpBrandName = $("#serviceHelpBrandNameId").val();
+		//品牌编码
+		var serviceHelpBrandCode = $("#serviceHelpBrandCodeId").val();
+
+        var serviceHref = "";
+        //点击客服页面的标识
+        var serviceFlag = $("#serviceRefId").val();
+        //内购客服标识
+        var innerFlag = false;
+        if(serviceFlag && serviceFlag == "1"){
+            //商品详情页
+            serviceHref = $("#servicehrefId").val().replace("&from=06","&from=01");
+            if (window.location.href.indexOf("source=inner") > -1){
+                if (ec.account.onlineServiceInfo && ec.account.onlineServiceInfo.linkUrl){
+                    serviceHref = ec.account.onlineServiceInfo.linkUrl.transHtmlAttribute();
+                    innerFlag = true;
+                } else {
+                    alertBox('无法连接在线客服，请稍后再试');
+                    return;
+                }
+            }
+        }else if (serviceFlag && serviceFlag == "3"){
+            //订单详情页 /我的订单页 /订单修改页 /收货地址管理页
+            serviceHref = $("#servicehrefId").val().replace("&from=06","&from=03");
+        }else if (serviceFlag && serviceFlag == "4"){
+            //我的退换货页 /退换货详情页 / 申请退换货页
+            serviceHref = $("#servicehrefId").val().replace("&from=06","&from=04");
+        }else if (serviceFlag && serviceFlag == "7"){
+            //消息中心
+            serviceHref = $("#servicehrefId").val().replace("&from=06","&from=07");
+        }else if (serviceFlag && serviceFlag == "5"){
+            //帮助中心
+            serviceHref = $("#servicehrefId").val().replace("&from=06","&from=05");
+        }else if (serviceFlag && serviceFlag == "8"){
+            //内购
+            if (ec.account.onlineServiceInfo && ec.account.onlineServiceInfo.linkUrl){
+                serviceHref = ec.account.onlineServiceInfo.linkUrl.transHtmlAttribute();
+                innerFlag = true;
+            } else {
+                alertBox('无法连接在线客服，请稍后再试');
+                return;
+            }
+        }else{
+            serviceHref = $("#servicehrefId").val();
+        }
+
+        if (!innerFlag){
+            //需要拼接到url上的参数
+            var serviceHrefSbomcodeParm = "&sbomCode=" + serviceHrefSbomcode;
+            var serviceHrefSeCodeParm = "&seCode=" + serviceHrefSeCode;
+            var serviceHrefSeNameParm = "&seName=" + serviceHelpSeName;
+            var serviceHrefBrandNameParm = "&brandName=" + serviceHelpBrandName;
+            var servicehrefBrandCodeParm = "&brandCode=" + serviceHelpBrandCode;
+
+            if (serviceHrefSbomcode){
+                serviceHref += serviceHrefSbomcodeParm;
+            }
+            if (serviceHelpBrandCode) {
+                serviceHref += servicehrefBrandCodeParm;
+            }
+            if (serviceHelpBrandName) {
+                serviceHref += serviceHrefBrandNameParm;
+            }
+            //代销商品
+            if(serviceHrefSeCode && serviceHrefSeCode != "VMALL-HUAWEIDEVICE"){
+                
+                if ($("#serviceProxyHrefId").val() && $("#serviceProxyHrefId").val() != "") {
+                    serviceHref = "";
+                    if(serviceFlag && serviceFlag == "1"){
+                        //商品详情页
+                        serviceHref = $("#serviceProxyHrefId").val().replace("&from=06","&from=01");
+                    }else if (serviceFlag && serviceFlag == "3"){
+                        //订单详情页 /我的订单页 /订单修改页 /收货地址管理页
+                        serviceHref = $("#serviceProxyHrefId").val().replace("&from=06","&from=03");
+                    }else if (serviceFlag && serviceFlag == "4"){
+                        //我的退换货页 /退换货详情页 / 申请退换货页
+                        serviceHref = $("#serviceProxyHrefId").val().replace("&from=06","&from=04");
+                    }
+                    if(serviceHrefSbomcode){
+                        serviceHref += serviceHrefSbomcodeParm;
+                    }
+                    if (serviceHelpBrandCode) {
+                        serviceHref += servicehrefBrandCodeParm;
+                    }
+                    if (serviceHelpBrandName) {
+                        serviceHref += serviceHrefBrandNameParm;
+                    }
+                    serviceHref += serviceHrefSeCodeParm;
+                    serviceHref += serviceHrefSeNameParm;
+                }
+            }
+        }
+
+        if(serviceFlag && serviceFlag == "-1"){
+            //游客购订单详情页面，不需要拉起登录
+            window.open(serviceHref, "_blank");
+        }else{
+            ec.account.afterLogin(function() {
+                window.open(serviceHref, "_blank");
+            }, '', serviceHref);
+        }
+
+        var buttonName = ['', '购物车', '在线客服', '自助服务'][index];
+        ec.dapClick(300000601, {
+            "buttonName": buttonName,
+            "click": "1",
+            'index': index
+        });
+    }
+
+    //右侧浮层点击方法
+    function pushRightHelpMsg(index) {
+        if(index==1){
+            // 购物车
+            // 对接vue订单确认页的开关
+            var web_vue_cart_enable  = $('.web_vue_cart_enable').attr('attr'); 
+            if($.trim(web_vue_cart_enable) && web_vue_cart_enable.indexOf('true')>-1){
+                window.location.href = domainMain + '/v/cart';
+            }else{
+                window.location.href = domainMain + '/cart2';
+            } 	
+        }
+
+        var buttonName = ['', '购物车', '在线客服', '自助服务'][index];
+        ec.dapClick(300000601, {
+            "buttonName": buttonName,
+            "click": "1",
+            'index': index
+        });
+    }
+
+    jump = function(url,obj){
+        if(typeof(obj.html()) != "undefined" && obj.html() != null && obj.html() != ""){
+            pushFootAdvertMsg($(this).html(),url);
+        }
+        var win = ec.openWindow(url);
+        win.opener = null ;
+    }
+
+    function pushProHotMsg(skuCode) {
+        ec.dapClick(300020701, {
+            "productId": ec.product.id,
+            "SKUCode": (ec.product.getSkuInfo(ec.product.getSku()) || {}).code,
+            "linkSKUCode": skuCode,
+            "click": "1"
+        });
+    }
+
+    jump_link = function(url) {
+        return;
+    }
+
+    //购物车关闭提示
+    function cartTipsHide(){
+        $('#cart-tips').hide();
+    }
+</script>
+</body></html>

@@ -1,0 +1,22 @@
+{
+  "experiences": [
+    {
+      "time": "2020-01-01",
+      "location": "New York",
+      "event": "Attended a coding bootcamp",
+      "people": ["John", "Sarah"]
+    },
+    {
+      "time": "2018-05-15",
+      "location": "Paris",
+      "event": "Traveled to Europe",
+      "people": ["David", "Emily"]
+    },
+    {
+      "time": "2016-09-10",
+      "location": "Tokyo",
+      "event": "Started a new job",
+      "people": ["Michael", "Jessica"]
+    }
+  ]
+}
