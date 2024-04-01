@@ -77,7 +77,14 @@ import AwesomeIcon from "@/Icon/AwesomeIcon.vue";
 import {useRoute} from "vue-router";
 // const fullPath = $route.params.redirect
 const route = useRoute();
-const redirectPath= route.query.redirect || '/';
+// const temp = route.query.redirect;
+let redirectPath = route.query.redirect
+
+if (Array.isArray(redirectPath)) {
+  redirectPath = redirectPath[0]
+}
+
+redirectPath = redirectPath || '/'
 console.log("上一个页面是: "+redirectPath);
 const form: LoginForm = reactive({
     region: '',
