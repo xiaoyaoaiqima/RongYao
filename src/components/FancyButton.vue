@@ -4,7 +4,7 @@
   </div>
 </template>
 
-<style>
+<style scoped>
 .fancy-btn {
   color: #fff;
   background: linear-gradient(315deg, #42d392 25%, #647eff);

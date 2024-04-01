@@ -3,7 +3,7 @@
         <el-menu :default-active="activeIndex" class="el-menu-demo" mode="horizontal" :ellipsis="false"
             @select="handleSelect">
             <el-menu-item index="0">
-                <img style="width: 100px;margin-left: 350px;" src="../assets/club.png" alt="Element logo" />
+                <img style="width: 100px;margin-left: 250px;" src="../assets/club.png" alt="Element logo" />
             </el-menu-item>
           <el-menu-item index="1">
             <el-button type="primary" >
@@ -38,7 +38,7 @@ const handleSelect = (key: string, keyPath: string[]) => {
 }
 </script>
 
-<style>
+<style scoped>
 #globalHeader {
     margin: 0 auto;
     width: 80%;
@@ -50,8 +50,8 @@ const handleSelect = (key: string, keyPath: string[]) => {
 }
 
 .search_bar {
-    margin-left: 300px;
+    margin-left: 350px;
     width: 300px;
-  margin-top: 10px;
+    margin-top: 10px;
 }
 </style>

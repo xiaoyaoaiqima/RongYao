@@ -86,8 +86,6 @@ import GlobalHeader_home from "@/components/GlobalHeader_home.vue";
 }
 .hero1 {
   height: 600px;
-  margin-right: 100px;
-  margin-left: 100px;
   padding: 20px;
   text-align: center;
   justify-content: center;
@@ -96,8 +94,6 @@ import GlobalHeader_home from "@/components/GlobalHeader_home.vue";
 }
 .hero2 {
   height: 600px;
-  margin-right: 100px;
-  margin-left: 100px;
   padding: 20px;
   text-align: center;
   justify-content: center;
@@ -108,8 +104,6 @@ import GlobalHeader_home from "@/components/GlobalHeader_home.vue";
 }
 .hero3 {
   height: 600px;
-  margin-right: 100px;
-  margin-left: 100px;
   padding: 20px;
   text-align: center;
   justify-content: center;

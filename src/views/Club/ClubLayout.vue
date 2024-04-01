@@ -1,5 +1,5 @@
 <template>
-  <div style="margin-right: 500px;margin-left: 550px;margin-top: 200px" >
+  <div style="margin-right: 450px;margin-left: 450px;margin-top: 200px" >
     <el-row :gutter="50">
       <el-col :span="18">
         <div class="c1">
@@ -21,6 +21,7 @@
                 :title="card.title"
                 :description="card.description"
                 :imageUrl="card.imageUrl"
+                :goto="card.goto"
             />
             <p>下面使用axios拿到的数据</p>
             <list_card

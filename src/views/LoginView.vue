@@ -74,7 +74,11 @@ import {UserStore} from "@/stores/user";
 import type {LoginForm} from "@/types";
 import FancyButton from "@/components/FancyButton.vue";
 import AwesomeIcon from "@/Icon/AwesomeIcon.vue";
-
+import {useRoute} from "vue-router";
+// const fullPath = $route.params.redirect
+const route = useRoute();
+const redirectPath= route.query.redirect || '/';
+console.log("上一个页面是: "+redirectPath);
 const form: LoginForm = reactive({
     region: '',
     userAccount: '',
@@ -89,12 +93,15 @@ const login = () => {
               // 将用户登录时候的表单输入userAccount
               // mock模拟的数据存入pinia
               // 使用pinia的action
-              sessionStorage.setItem('ifLogin', String(true));
-              // console.log("Login: "+sessionStorage.getItem('ifLogin'));
+
+              console.log("Login: "+sessionStorage.getItem('ifLogin'));
               userStore.getUser(form.userAccount,response.data.avatarUrl,form.region)
-              alert('200: ' + response.data.message + '\n用户头像为'+response.data.avatarUrl)
+              // alert('200: ' + response.data.message + '\n用户头像为'+response.data.avatarUrl)
+              // const redirect = this.$route.params.redirect || '/home'
+              // this.$router.push(redirect) // 跳转回原来要访问的页面
+
                 // 跳转到首页
-                router.push('/');
+              router.push(redirectPath);
             } else {
                 // 登录失败，处理错误信息
                 console.error(response.data.message)

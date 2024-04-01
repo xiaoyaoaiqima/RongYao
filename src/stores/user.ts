@@ -19,6 +19,7 @@ export const UserStore = defineStore('user', {
             this.avatarUrl = avatarUrl
             this.ifLogin = true
             this.region =  region
+            sessionStorage.setItem('ifLogin', String(true));
         },
     },
 })

@@ -54,24 +54,28 @@ export const cards = ([
     {
         title: '荣耀高校',
         description: '荣耀校园公开课来西北大学啦！和同学们一起探讨荣耀MagicOS的未来无限可能，体验荣耀全场景设备的智慧互联。一场讲座，多重收获，同学 ..',
-        imageUrl: 'https://pic.imgdb.cn/item/660948b49f345e8d03ba10a6.jpg'
+        imageUrl: 'https://pic.imgdb.cn/item/660948b49f345e8d03ba10a6.jpg',
+        goto:'https://club.honor.com/cn/thread-28478964-1-1.html'
     },
     {
         title: '荣耀俱乐部',
         description: '每天一个荣耀玩机技巧 | 收藏快来升级荣耀MagicOS 8.0! \n' +
             '解锁YOYO新功能，AI文本创作厉害了！让你的手机也能自动写文章？这么神奇分享 ..',
-        imageUrl: 'https://pic.imgdb.cn/item/660948b49f345e8d03ba1205.jpg'
+        imageUrl: 'https://pic.imgdb.cn/item/660948b49f345e8d03ba1205.jpg',
+        goto:'https://club.honor.com/cn/thread-28493465-1-1.html'
     },
     {
         title: '荣耀制噪者 • 江苏',
         description: '[表情] 研艺青春 筑梦科[表情] 鹰眼抓拍 留住精彩 \n'+
             '荣耀制噪者 携手江苏科技大学研究生风采大赛，透过荣耀M ..',
-        imageUrl: '  https://pic.imgdb.cn/item/660948b49f345e8d03ba12ab.jpg'
+        imageUrl: '  https://pic.imgdb.cn/item/660948b49f345e8d03ba12ab.jpg',
+        goto:'https://club.honor.com/cn/thread-28493465-1-1.html'
     },
     {
         title: '荣耀俱乐部 ',
         description: '荣耀电竞堂河北站端游场圆满落幕啦，荣耀MagicBook Pro 16的140W Turbo引擎为选手们提供了更真实、沉浸的游戏体验，面对瞬息万变的游戏 ...',
-        imageUrl: 'https://pic.imgdb.cn/item/660948b49f345e8d03ba1388.jpg'
+        imageUrl: 'https://pic.imgdb.cn/item/660948b49f345e8d03ba1388.jpg',
+        goto:'https://club.honor.com/cn/thread-28493465-1-1.html'
     },
     // Repeat for the number of cards you want
 ]);
