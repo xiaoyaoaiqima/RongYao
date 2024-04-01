@@ -65,17 +65,14 @@
 </template>
 
 <script lang="ts" setup>
-import { reactive, ref } from 'vue'
+import { reactive } from 'vue'
 import axios from 'axios'
 
 
 import router from "@/router";
 import {UserStore} from "@/stores/user";
 import type {LoginForm} from "@/types";
-import FancyButton from "@/components/FancyButton.vue";
-import AwesomeIcon from "@/Icon/AwesomeIcon.vue";
 import {useRoute} from "vue-router";
-// const fullPath = $route.params.redirect
 const route = useRoute();
 // const temp = route.query.redirect;
 let redirectPath = route.query.redirect
@@ -108,7 +105,7 @@ const login = () => {
               // this.$router.push(redirect) // 跳转回原来要访问的页面
 
                 // 跳转到首页
-              router.push(redirectPath);
+              router.push(redirectPath as string);
             } else {
                 // 登录失败，处理错误信息
                 console.error(response.data.message)
