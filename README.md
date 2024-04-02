@@ -13,6 +13,8 @@ Vue指令用了 v-if，v-for，v-model，v-input 加起来很多个了
 - 组件质量 : Carousel.vue复用了很多次，BasicLayout.vue复用很多次
 - BasicLayout.vue在app.vue里面使用，相当于后面的每一个路由，都使用了这个文件
 - 组件特性 : props传参用了  ，Carousel.vue里面，listCard.vue里面
+- emit用了。购物车，父组件控制子组件
+- slot用了，用于花哨的按钮
 ### 路由设计
 有404页面（ErrorView.vue) ，在访问会员页面的时候跳转，
 10个路由 在router/index.ts 有详细标注

@@ -26,15 +26,9 @@
   </div>
 </template>
 
-
-<script setup>
-
-</script>
-
 <style scoped>
 .hotSelling {
-  margin-left: 280px;
-  margin-right: 280px;
+  margin: 0 280px;
 }
 
 .hotSelling_pic {
@@ -54,17 +48,10 @@
   grid-column: span 1;
 }
 
-.hotSelling h2 {
-  margin-bottom: 10px;
-}
-
-
 ul li {
   align-items: center;
   text-align: center;
-
 }
-
 
 a {
   text-decoration: none;

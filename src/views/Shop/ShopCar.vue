@@ -32,7 +32,6 @@
 
 <script setup>
 import ShoppingCartItem from './ShoppingCartItem.vue';
-import { ref } from "vue";
 import FancyButton from "@/components/FancyButton.vue";
 
 const cartItems = ref([

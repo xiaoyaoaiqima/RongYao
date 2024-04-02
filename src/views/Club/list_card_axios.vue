@@ -13,7 +13,6 @@
 <script setup>
 import { ElCard } from 'element-plus';
 import axios from 'axios';
-import { ref, onMounted } from 'vue';
 
 const title = ref('');
 const description = ref('');

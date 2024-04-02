@@ -13,8 +13,6 @@
 </template>
 
 <script setup>
-import { ElCard } from 'element-plus';
-import { ref } from 'vue';
 //这里用了props 传值
 const props = defineProps({
   title: String,

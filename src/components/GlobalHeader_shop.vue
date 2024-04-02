@@ -22,7 +22,7 @@
 
             <!-- 搜索框 -->
             <div class="search_bar">
-                <el-input v-model="search_data" placeholder="荣耀新手机" />
+                <el-input placeholder="荣耀新手机" />
             </div>
           <user-info/>
         </el-menu>
@@ -31,10 +31,8 @@
 </template>
 
 <script lang="ts" setup>
-import { ref } from 'vue'
 import UserInfo from "@/components/userInfo.vue";
-const search_data = ref('')
-const activeIndex = ref('1')
+const activeIndex = 1
 const handleSelect = (key: string, keyPath: string[]) => {
     console.log(key, keyPath)
 }

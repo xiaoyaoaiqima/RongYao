@@ -1,6 +1,4 @@
-import {ref, computed} from 'vue'
 import {defineStore} from 'pinia'
-
 
 export const UserStore = defineStore('user', {
     // 为了完整类型推理，推荐使用箭头函数

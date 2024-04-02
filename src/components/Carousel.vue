@@ -10,8 +10,6 @@
 </template>
 
 <script setup>
-import { defineProps } from 'vue';
-
 
 // 定义props
 const props = defineProps({

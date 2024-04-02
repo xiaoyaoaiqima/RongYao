@@ -35,10 +35,9 @@
 
 <script lang="ts" setup>
 import { Delete, Edit, Search, Share, Upload } from '@element-plus/icons-vue'
-import { ref } from 'vue'
 import {UserStore} from "@/stores/user";
 import UserInfo from "@/components/userInfo.vue";
-const activeIndex = ref('1')
+const activeIndex = 1
 const userStore = UserStore()
 const handleSelect = (key: string, keyPath: string[]) => {
     console.log(key, keyPath)
@@ -47,17 +46,8 @@ const handleSelect = (key: string, keyPath: string[]) => {
 
 <style scoped>
 #globalHeader {
-    min-width: 1200px;
     height: 36px;
     line-height: 36px;
     background-color: #000;
-}
-
-.search_bar {
-    margin-left: 400px;
-    margin-top: 10px;
-    width: 200px;
-    border-radius: 50px;
-
 }
 </style>

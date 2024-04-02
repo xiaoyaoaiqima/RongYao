@@ -13,7 +13,6 @@
 
 <script setup>
 import experience from '../../experience.json'
-import { computed} from 'vue';
 import {useRoute} from "vue-router";
 
 const route = useRoute();

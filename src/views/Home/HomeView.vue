@@ -11,7 +11,7 @@
       </span>
       </p>
     </div>
-    <div class="hero1">
+    <div class="hero-section hero1">
       <p style="font-size: 80px;margin-bottom: 20px">
         www.honor.com
       </p>
@@ -28,7 +28,7 @@
         *详情请以荣耀商城活动页为准。
       </p>
     </div>
-    <div class="hero2">
+    <div class="hero-section hero2">
       <div style="margin-left: 1300px;margin-bottom: 300px">
         <p style="font-size: 36px;margin-bottom: 5px">
           荣耀Magic6 至臻版
@@ -42,7 +42,7 @@
       </div>
 
     </div>
-    <div class="hero3">
+    <div class="hero-section hero3">
       <div style="margin-left: 800px;margin-bottom: 300px">
         <p style="font-size: 48px;margin-bottom: 5px">
           HONOR 100 系列
@@ -84,30 +84,22 @@ import GlobalHeader_home from "@/components/GlobalHeader_home.vue";
 .header p{
   color:azure;
 }
-.hero1 {
+.hero-section {
   height: 600px;
   padding: 20px;
   text-align: center;
-  justify-content: center;
-  align-content: center;
+  background-size: cover;
+}
+
+.hero1 {
   background: linear-gradient(#0000FF, #FFFFFF);
 }
 .hero2 {
-  height: 600px;
-  padding: 20px;
-  text-align: center;
-  justify-content: center;
-  align-content: center;
   background: url("../../assets/hero2.jpg");
   background-size: cover;
 
 }
 .hero3 {
-  height: 600px;
-  padding: 20px;
-  text-align: center;
-  justify-content: center;
-  align-content: center;
   background: url("../../assets/hero3.jpg") no-repeat;
   background-size: contain;
 }

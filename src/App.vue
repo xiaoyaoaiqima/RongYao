@@ -1,8 +1,7 @@
 <script setup lang="ts">
-import { RouterLink, RouterView, useRoute } from 'vue-router'
+import { RouterView, useRoute } from 'vue-router'
 import BasicLayout from './layouts/BasicLayout.vue'
 import {UserStore} from "@/stores/user";
-import router from "@/router";
 import {onMounted} from "vue";
 
 const route = useRoute()

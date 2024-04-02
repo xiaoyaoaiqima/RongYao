@@ -28,7 +28,6 @@
 </template>
 
 <script lang="ts" setup>
-import { ref } from 'vue'
 import {Search} from "@element-plus/icons-vue";
 import UserInfo from "@/components/userInfo.vue";
 const search_data = ref('')

@@ -88,7 +88,6 @@
 
 <script setup lang="ts">
 import list_card from '@/views/Club/list_card.vue';
-import {onMounted, ref} from 'vue';
 import {cards, datas_club_c2_1} from "@/static";
 import axios from "axios";
 import FancyButton from "@/components/FancyButton.vue";

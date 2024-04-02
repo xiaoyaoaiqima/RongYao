@@ -38,7 +38,6 @@
 
 <script lang="ts" setup>
 // import { RouterLink, RouterView } from 'vue-router'
-import { ref } from 'vue'
 const search_data = ref('')
 const activeIndex = ref('1')
 const handleSelect = (key: string, keyPath: string[]) => {
